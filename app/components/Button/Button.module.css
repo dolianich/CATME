@@ -1,0 +1,101 @@
+
+
+.primary{
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    padding-right: 36px;
+    cursor: pointer;
+    border: none;
+    border-radius: 24px;
+    background-color: #FF5756;
+    color: #F0F1FF;
+}
+
+.primary:hover {
+    opacity: 80%;
+}
+
+.primary:active {
+    scale: 0.95;
+}
+
+.secondary{
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    padding-right: 36px;
+    cursor: pointer;
+    border-radius: 24px;
+    background-color: #2E99FF;
+    color: #0A0B10;
+    border: none;
+}
+
+.secondary:hover {
+    opacity: 80%;
+}
+
+.secondary:active {
+    scale: 0.95;
+}
+
+.tertiary{
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    padding-right: 36px;
+    cursor: pointer;
+    border-radius: 24px;
+    background-color: #FFFD57;
+    color: #0A0B10;
+    border: none;
+}
+
+.tertiary:hover {
+    opacity: 80%;
+}
+
+.tertiary:active {
+    scale: 0.95;
+}
+
+.quaternary{
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    padding-right: 36px;
+    cursor: pointer;
+    border-radius: 24px;
+    background-color: #3AD996;
+    color: #0A0B10;
+    border: none;
+}
+
+.quaternary:hover {
+    opacity: 80%;
+}
+
+.quaternary:active {
+    scale: 0.95;
+}
