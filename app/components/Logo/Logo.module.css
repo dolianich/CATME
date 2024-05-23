@@ -1,0 +1,9 @@
+.logoContainer{
+    background-color: #F0F1FF;
+    border-radius: 24px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
