@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Button.module.css';
 
+
 type ButtonType = 'button' | 'submit' | 'reset' | undefined;
 type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'quaternary';
 

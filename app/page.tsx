@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import Button from './components/Button/Button';
+import { Fish } from '@phosphor-icons/react/dist/ssr';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Button variant="quaternary" title={''}>
         START PLAYING
       </Button>
+      <Fish weight="duotone" />
     </div>
   );
 }
