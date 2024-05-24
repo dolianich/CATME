@@ -3,6 +3,7 @@ import styles from './page.module.css';
 import Button from './components/Button/Button';
 import { Fish, Trophy } from '@phosphor-icons/react/dist/ssr';
 import Logo from './components/Logo/Logo';
+import NavButton from './components/NavButton';
 
 export default function Home() {
   return (
@@ -22,6 +23,8 @@ export default function Home() {
       <Fish weight="duotone" />
       <Trophy size={24} weight="fill" />
       <Logo />
+      <NavButton text="Home" icon={Fish} href="/"></NavButton>
+      <NavButton text="Home" icon={Trophy} href="/"></NavButton>
     </div>
   );
 }
