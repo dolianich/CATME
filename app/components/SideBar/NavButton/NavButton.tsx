@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import styles from './NavButton.module.css';
 
 interface Props {
   text: string;
@@ -10,19 +11,12 @@ interface Props {
   weight?: 'thin' | 'light' | 'regular' | 'bold' | 'fill' | 'duotone';
 }
 
-const NavButton = ({
-  text,
-  icon: Icon,
-  color,
-  href,
-  size,
-  weight,
-}: Props) => {
+const NavButton = ({ text, icon: Icon, color, href, size, weight }: Props) => {
   return (
-    <Link href={href || '#'}>
-      <button className="sidebar-button">
-        <span className="button-icon">
-          <Icon size={size} weight={weight} />
+    <Link href={href || '#'} className={styles.linkRoot}>
+      <button className={styles.selected}>
+        <span className={styles.iconContainer}>
+          <Icon size={size} weight={weight} color={color} />
         </span>
         <span className="button-text">{text}</span>
       </button>

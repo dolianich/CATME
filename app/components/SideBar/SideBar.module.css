@@ -1,0 +1,11 @@
+.navContainer{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 240px;
+    height: 100vh;
+    padding-left: 12px;
+    padding-right: 12px;
+    gap: 6px;
+}
