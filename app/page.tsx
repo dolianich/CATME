@@ -23,8 +23,14 @@ export default function Home() {
       <Fish weight="duotone" />
       <Trophy size={24} weight="fill" />
       <Logo />
-      <NavButton text="Home" icon={Fish} href="/"></NavButton>
-      <NavButton text="Home" icon={Trophy} href="/"></NavButton>
+      <NavButton
+        text="Home"
+        icon={Fish}
+        href="/"
+        size={24}
+        weight="duotone"
+      ></NavButton>
+      <NavButton text="Home" icon={Trophy} href="/" size={32}></NavButton>
     </div>
   );
 }
