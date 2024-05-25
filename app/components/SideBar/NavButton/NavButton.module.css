@@ -16,6 +16,33 @@
     font-weight: 500;
     line-height: 24px;
     width: 100%;
+    cursor: pointer;
+}
+
+.default{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 24px;
+    border: none;
+    background: #1B1E23;
+    justify-content: flex-start;
+    color: #85868B;
+    font-size: 16px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.18s ease;
+}
+
+.default:hover{
+    background-color: #42464B;
 }
 
 .linkRoot{

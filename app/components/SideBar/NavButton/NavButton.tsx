@@ -14,7 +14,7 @@ interface Props {
 const NavButton = ({ text, icon: Icon, color, href, size, weight }: Props) => {
   return (
     <Link href={href || '#'} className={styles.linkRoot}>
-      <button className={styles.selected}>
+      <button className={styles.default}>
         <span className={styles.iconContainer}>
           <Icon size={size} weight={weight} color={color} />
         </span>
