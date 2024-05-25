@@ -39,6 +39,7 @@
     width: 100%;
     cursor: pointer;
     transition: background-color 0.18s ease;
+    text-decoration: none;
 }
 
 .default:hover{
@@ -47,6 +48,7 @@
 
 .linkRoot{
     width: 100%;
+    text-decoration: none;
 }
 
 .iconContainer{
