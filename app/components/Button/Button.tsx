@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Button.module.css';
 
-
 type ButtonType = 'button' | 'submit' | 'reset' | undefined;
 type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'quaternary';
 
@@ -22,7 +21,7 @@ const Button = ({
   type,
   variant,
 }: Props) => {
-  let buttonClass = variant ? styles[variant] : styles.primary;
+  const buttonClass = variant ? styles[variant] : styles.primary;
   return (
     <button
       onClick={handleClick}

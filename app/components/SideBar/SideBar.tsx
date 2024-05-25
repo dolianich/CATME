@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import NavButton from './NavButton/NavButton';
 import {
@@ -8,10 +10,12 @@ import {
   Storefront,
   UsersThree,
   Eye,
-} from '@phosphor-icons/react/dist/ssr';
+} from '@phosphor-icons/react';
 import styles from './SideBar.module.css';
+import { usePathname } from 'next/navigation';
 
 const SideBar = () => {
+  const currentPath = usePathname();
   const navButtons = [
     {
       label: 'Discover',
@@ -65,8 +69,9 @@ const SideBar = () => {
           icon={button.icon}
           href={button.href}
           size={button.size}
-          color="#85868B"
-          weight="regular"
+          color={`${button.href === currentPath ? '#F0F1FF' : "#85868B"}`}
+          weight={`${button.href === currentPath ? 'fill' : 'regular'}`}
+          state={`${button.href === currentPath ? 'selected' : 'default'}`}
         />
       ))}
     </nav>
