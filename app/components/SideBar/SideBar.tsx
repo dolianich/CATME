@@ -13,6 +13,7 @@ import {
 } from '@phosphor-icons/react';
 import styles from './SideBar.module.css';
 import { usePathname } from 'next/navigation';
+import Logo from '../Logo/Logo';
 
 const SideBar = () => {
   const currentPath = usePathname();
@@ -61,20 +62,26 @@ const SideBar = () => {
     },
   ];
   return (
-    <nav className={styles.navContainer}>
-      {navButtons.map((button) => (
-        <NavButton
-          key={button.href}
-          text={button.label}
-          icon={button.icon}
-          href={button.href}
-          size={button.size}
-          color={`${button.href === currentPath ? '#F0F1FF' : "#85868B"}`}
-          weight={`${button.href === currentPath ? 'fill' : 'regular'}`}
-          state={`${button.href === currentPath ? 'selected' : 'default'}`}
-        />
-      ))}
-    </nav>
+    <div className={styles.sideBar}>
+      <div className={styles.logoSection}>
+        <Logo />
+        <h2>CATME</h2>
+      </div>
+      <nav className={styles.navContainer}>
+        {navButtons.map((button) => (
+          <NavButton
+            key={button.href}
+            text={button.label}
+            icon={button.icon}
+            href={button.href}
+            size={button.size}
+            color={`${button.href === currentPath ? '#F0F1FF' : '#85868B'}`}
+            weight={`${button.href === currentPath ? 'fill' : 'regular'}`}
+            state={`${button.href === currentPath ? 'selected' : 'default'}`}
+          />
+        ))}
+      </nav>
+    </div>
   );
 };
 

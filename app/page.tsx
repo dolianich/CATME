@@ -7,9 +7,5 @@ import NavButton from './components/SideBar/NavButton/NavButton';
 import SideBar from './components/SideBar/SideBar';
 
 export default function Home() {
-  return (
-    <div>
-      <Logo />
-    </div>
-  );
+  return <div>Discover</div>;
 }
