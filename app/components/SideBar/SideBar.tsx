@@ -14,6 +14,7 @@ import {
 import styles from './SideBar.module.css';
 import { usePathname } from 'next/navigation';
 import Logo from '../Logo/Logo';
+import Banner from './Banner/Banner';
 
 const SideBar = () => {
   const currentPath = usePathname();
@@ -81,6 +82,7 @@ const SideBar = () => {
           />
         ))}
       </nav>
+      <Banner></Banner>
     </div>
   );
 };

@@ -5,7 +5,9 @@ import { Fish, Trophy } from '@phosphor-icons/react/dist/ssr';
 import Logo from './components/Logo/Logo';
 import NavButton from './components/SideBar/NavButton/NavButton';
 import SideBar from './components/SideBar/SideBar';
+import Banner from './components/SideBar/Banner/Banner';
 
 export default function Home() {
-  return <div>Discover</div>;
+  return <div>
+    Discover</div>;
 }

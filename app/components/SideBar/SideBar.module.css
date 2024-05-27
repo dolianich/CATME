@@ -21,9 +21,10 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    padding-bottom: 28px;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    align-items: center;
 }
 
 .logoSection h2{
@@ -32,6 +33,7 @@
     font-weight: 700;
     line-height: 32px;
     color: #F0F1FF;
+    margin: 0;
 }
 
 
