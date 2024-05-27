@@ -1,5 +1,5 @@
 .sideBar{
-    width: 240px;
+    width: 218px;
     height: 100vh;
     background-color: #1B1E23;
     display: flex;
@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
-    gap: 6px;
+    gap: 2px;
 }
 
 .logoSection{
@@ -24,8 +24,8 @@
     gap: 10px;
     padding-bottom: 28px;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 28px;
+    padding-bottom: 28px;
 }
 
 .logoSection h2{
