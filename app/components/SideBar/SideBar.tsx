@@ -64,6 +64,7 @@ const SideBar = () => {
   ];
   return (
     <div className={styles.sideBar}>
+     <div>
       <div className={styles.logoSection}>
         <Logo />
         <h2>CATME</h2>
@@ -82,7 +83,8 @@ const SideBar = () => {
           />
         ))}
       </nav>
-      <Banner></Banner>
+      </div>
+      <Banner />
     </div>
   );
 };

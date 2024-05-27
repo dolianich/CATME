@@ -8,6 +8,5 @@ import SideBar from './components/SideBar/SideBar';
 import Banner from './components/SideBar/Banner/Banner';
 
 export default function Home() {
-  return <div>
-    Discover</div>;
+  return <div>Discover</div>;
 }

@@ -6,6 +6,7 @@
     flex-direction: column;
     padding-left: 12px;
     padding-right: 12px;
+    justify-content: space-between;
 }
 
 .navContainer{
@@ -35,6 +36,7 @@
     color: #F0F1FF;
     margin: 0;
 }
+
 
 
 
