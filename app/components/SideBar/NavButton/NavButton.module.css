@@ -43,7 +43,8 @@
 }
 
 .default:hover{
-    background-color: #42464B;
+    background-color: #2C2F33;
+    color: #F0F1FF;
 }
 
 .linkRoot{
