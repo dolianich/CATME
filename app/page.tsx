@@ -1,4 +1,3 @@
-'use client';
 import Image from 'next/image';
 import styles from './page.module.css';
 import Button from './components/Button/Button';
@@ -12,21 +11,5 @@ import { Eye } from '@phosphor-icons/react/dist/ssr';
 import SearchInput from './components/SearchInput/SearchInput';
 
 export default function Home() {
-  const handleSearchChange = (value: string) => {
-    console.log('Search term:', value);
-  };
-
-  const handleCustomSearch = () => {
-    console.log('Custom search action triggered!');
-  };
-
-  return (
-    <div>
-      <SearchInput
-        placeholder="Search..."
-        onChange={handleSearchChange}
-        onSearch={handleCustomSearch}
-      ></SearchInput>
-    </div>
-  );
+  return <div>Discover</div>;
 }
