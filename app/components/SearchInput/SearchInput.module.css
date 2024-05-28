@@ -32,3 +32,13 @@
     letter-spacing: 1px;
     color: #85868B;
 }
+
+
+@media (max-width: 1050px) { 
+    .inputContainer {
+      width: 100%;
+    }
+    .inputContainer input {
+      flex: 1 0 auto; 
+    }
+  }
