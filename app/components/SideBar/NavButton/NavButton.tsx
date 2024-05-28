@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './NavButton.module.css';
 
-type ButtonState = 'selected' | 'default';
 interface Props {
   text: string;
   icon: React.ComponentType<any>;

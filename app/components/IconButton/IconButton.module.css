@@ -1,0 +1,84 @@
+.outlined{
+    padding: 13px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-color: #42464B;
+    border-width: 1px;
+    background-color: #1B1E23;
+    cursor: pointer;
+}
+
+.outlined:hover {
+    background-color: #42464B;
+}
+
+.primary{
+    padding: 13px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-color: #FF5756;
+    border-width: 1px;
+    background-color: #FF5756;
+    cursor: pointer;
+}
+
+.primary:hover {
+    opacity: 80%;
+}
+
+.secondary{
+    padding: 13px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-color: #2E99FF;
+    border-width: 1px;
+    background-color: #2E99FF;
+    cursor: pointer;
+}
+
+.secondary:hover {
+    opacity: 80%;
+}
+
+.tertiary{
+    padding: 13px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-color: #FFFD57;
+    border-width: 1px;
+    background-color: #FFFD57;
+    cursor: pointer;
+}
+
+.tertiary:hover {
+    opacity: 80%;
+}
+
+.quaternary{
+    padding: 13px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-color: #3AD996;
+    border-width: 1px;
+    background-color: #3AD996;
+    cursor: pointer;
+}
+
+.quaternary:hover {
+    opacity: 80%;
+}
