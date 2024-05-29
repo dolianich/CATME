@@ -1,0 +1,75 @@
+.primary{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgba(255, 87, 86, 0.26);
+    color: #FF5756;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1px;
+    border-radius: 24px;
+}
+
+.secondary{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgba(46, 153, 255, 0.26);
+    color: #2E99FF;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1px;
+    border-radius: 24px;
+}
+
+.tertiary{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgba(255, 253, 87, 0.26);
+    color: #FFFD57;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1px;
+    border-radius: 24px;
+}
+
+.quaternary{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgba(58, 217, 150, 0.26);
+    color: #3AD996;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1px;
+    border-radius: 24px;
+}
+
+.quinary{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgba(162, 87, 255, 0.26);
+    color: #A257FF;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1px;
+    border-radius: 24px;
+}
+
