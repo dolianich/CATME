@@ -20,12 +20,16 @@ export default function Home() {
         <GameCard />
         <GameCard />
         <GameCard />
+        <GameCard />
+        <GameCard />
+        <GameCard />
+        <GameCard />
+        <GameCard />
+        <GameCard />
+        <GameCard />
+        <GameCard />
       </div>
-      <div className={styles.cardsSection}>
-        <GameCard />
-        <GameCard />
-        <GameCard />
-      </div>
+     
     </div>
   );
 }
