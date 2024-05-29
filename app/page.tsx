@@ -15,7 +15,12 @@ import GameCard from './components/GameCard/GameCard';
 export default function Home() {
   return (
     <div>
-      <Heading>Discover</Heading>
+      <Heading>Recommended Games</Heading>
+      <div className={styles.cardsSection}>
+        <GameCard />
+        <GameCard />
+        <GameCard />
+      </div>
       <div className={styles.cardsSection}>
         <GameCard />
         <GameCard />

@@ -24,6 +24,10 @@
     background-color: #0A0B10;
 }
 
+.inputContainer input:focus{
+    border-color: #85868B;
+}
+
 .inputContainer input::placeholder{
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 12px;
