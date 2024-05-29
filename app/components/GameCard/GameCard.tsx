@@ -6,11 +6,11 @@ const GameCard = () => {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.tagsContainer}>
-        <Tag variant='primary'>ARCADE</Tag>
+        {/*<Tag variant='primary'>ARCADE</Tag>
         <Tag variant='secondary'>ARCADE</Tag>
         <Tag variant='tertiary'>ARCADE</Tag>
         <Tag variant='quaternary'>ARCADE</Tag>
-        <Tag variant='quinary'>ARCADE</Tag>
+  <Tag variant='quinary'>ARCADE</Tag>*/}
       </div>
     </div>
   );
