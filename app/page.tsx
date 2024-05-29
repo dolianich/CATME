@@ -10,11 +10,17 @@ import IconButton from './components/IconButton/IconButton';
 import { Eye } from '@phosphor-icons/react/dist/ssr';
 import SearchInput from './components/SearchInput/SearchInput';
 import Heading from './components/Heading/Heading';
+import GameCard from './components/GameCard/GameCard';
 
 export default function Home() {
   return (
     <div>
-      <Heading text="Discover" />
+      <Heading>Discover</Heading>
+      <div className={styles.cardsSection}>
+        <GameCard />
+        <GameCard />
+        <GameCard />
+      </div>
     </div>
   );
 }

@@ -1,8 +1,6 @@
 body{
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  grid-template-rows: 1fr;
-  min-height: 100vh;
+  display: flex;
+  height: 100vh;
   margin: 0;
   background-color: #0A0B10;
   color: #F0F1FF;
@@ -12,6 +10,8 @@ body{
 .main{
   display: flex;
   flex-direction: column;
+  margin-left: 242px;
+  width: 100%;
 }
 
 .main main{

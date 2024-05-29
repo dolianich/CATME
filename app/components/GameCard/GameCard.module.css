@@ -1,0 +1,8 @@
+.cardContainer{
+    border-radius: 32px;
+    background-color: #1B1E23;
+    display: flex;
+    flex: 1;
+    min-width: 250px;
+    height: 352px;
+}
