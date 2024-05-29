@@ -67,7 +67,7 @@ const SideBar = () => {
      <div>
       <div className={styles.logoSection}>
         <Logo />
-        <h2>CATME</h2>
+        {/*<h2>CATME</h2>*/}
       </div>
       <nav className={styles.navContainer}>
         {navButtons.map((button) => (

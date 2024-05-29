@@ -8,6 +8,6 @@
 @media (max-width: 1050px) { 
     .topBarContainer {
       flex-direction: column-reverse;
-      gap: 18px;
+      gap: 24px;
     }
 }

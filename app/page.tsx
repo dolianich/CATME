@@ -9,7 +9,12 @@ import Banner from './components/SideBar/Banner/Banner';
 import IconButton from './components/IconButton/IconButton';
 import { Eye } from '@phosphor-icons/react/dist/ssr';
 import SearchInput from './components/SearchInput/SearchInput';
+import Heading from './components/Heading/Heading';
 
 export default function Home() {
-  return <div>Discover</div>;
+  return (
+    <div>
+      <Heading text="Discover" />
+    </div>
+  );
 }

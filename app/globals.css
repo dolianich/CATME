@@ -13,3 +13,10 @@ body{
   display: flex;
   flex-direction: column;
 }
+
+.main main{
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
