@@ -12,16 +12,16 @@ import SearchInput from './components/SearchInput/SearchInput';
 import Heading from './components/Heading/Heading';
 import GameCard from './components/GameCard/GameCard';
 
+const games = [
+  {}
+]
+
 export default function Home() {
   return (
     <div>
       <Heading>Recommended Games</Heading>
       <div className={styles.cardsSection}>
-        <GameCard />
-        <GameCard />
-        <GameCard />
-        <GameCard />
-        <GameCard />
+        <GameCard title='Brick Breaker' tagLabel='ARCADE' tagVariant='primary'/>
       </div>
      
     </div>

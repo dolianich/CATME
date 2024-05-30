@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from './Tag.module.css';
 
-type TagVariant = 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'quinary';
+export type TagVariant = 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'quinary';
 
 interface Props {
   children: string;
-  variant?: TagVariant;
+  tagVariant?: TagVariant;
 }
 
-const Tag = ({ children, variant }: Props) => {
-  const tagClass = variant ? styles[variant] : styles.primary;
+const Tag = ({ children, tagVariant }: Props) => {
+  const tagClass = tagVariant ? styles[tagVariant] : styles.primary;
   return <div className={tagClass}>{children}</div>;
 };
 

@@ -7,8 +7,15 @@ import gameImage from '../../src/gamesImages/game.png';
 import IconButton from '../IconButton/IconButton';
 import {Eye, Info} from '@phosphor-icons/react';
 import Button from '../Button/Button';
+import { TagVariant } from '../Tag/Tag';
 
-const GameCard = () => {
+interface Props{
+    title?: string;
+    tagLabel: string;
+    tagVariant?: TagVariant;
+}
+
+const GameCard = ({title, tagLabel, tagVariant}: Props) => {
   return (
     <div className={styles.cardContainer}>
       <Image
@@ -17,10 +24,9 @@ const GameCard = () => {
         alt="Game Cover"
         className={styles.image}
       ></Image>
-      <h2>Brick Breaker</h2>
+      <h2>{title}</h2>
       <div className={styles.tagsContainer}>
-        <Tag variant="primary">ARCADE</Tag>
-        <Tag variant="secondary">MINI-GAME</Tag>
+        <Tag tagVariant={tagVariant}>{tagLabel}</Tag>
       </div>
       <div className={styles.buttonsContainer}>
         <div className={styles.actionContainer}>
