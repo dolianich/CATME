@@ -13,17 +13,38 @@ import Heading from './components/Heading/Heading';
 import GameCard from './components/GameCard/GameCard';
 
 const games = [
-  {}
-]
+  { title: 'Brick Breaker', category: 'ARCADE' },
+  { title: 'Tetris', category: 'MINI-GAME' },
+  { title: 'Bubble Shooter', category: 'DEGEN' },
+  { title: 'Meme Machine', category: 'P2E' },
+];
 
 export default function Home() {
   return (
     <div>
       <Heading>Recommended Games</Heading>
       <div className={styles.cardsSection}>
-        <GameCard title='Brick Breaker' tagLabel='ARCADE' tagVariant='primary'/>
+        {games.map((game) => (
+          <GameCard
+            title={game.title}
+            tagLabel={game.category}
+            tagVariant={
+              game.category === 'ARCADE'
+                ? 'primary'
+                : game.category === 'MINI-GAME'
+                ? 'secondary'
+                : game.category === 'DEGEN'
+                ? 'tertiary'
+                : 'quaternary'
+            }
+          />
+        ))}
+        <GameCard
+          title="Brick Breaker"
+          tagLabel="ARCADE"
+          tagVariant="primary"
+        />
       </div>
-     
     </div>
   );
 }
