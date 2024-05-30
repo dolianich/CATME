@@ -5,6 +5,9 @@ import styles from './TopBar.module.css';
 import Button from '../Button/Button';
 
 const TopBar = () => {
+
+  const authClick = () => console.log("Auth button was clicked");
+
   const handleSearchChange = (value: string) => {
     console.log('Search term:', value);
   };
@@ -20,7 +23,7 @@ const TopBar = () => {
         onChange={handleSearchChange}
         onSearch={handleCustomSearch}
       ></SearchInput>
-      <Button title={'START PLAYING'} variant="secondary">START PLAYING</Button>
+      <Button title={'START PLAYING'} variant="secondary" onClick={authClick}>START PLAYING</Button>
     </div>
   );
 };

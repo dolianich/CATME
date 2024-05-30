@@ -6,7 +6,7 @@ type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'quaternary';
 
 interface Props {
   children: React.ReactNode;
-  handleClick?: () => void;
+  onClick?: () => void;
   title: string;
   disabled?: boolean;
   type?: ButtonType;
@@ -15,7 +15,7 @@ interface Props {
 
 const Button = ({
   children,
-  handleClick,
+  onClick,
   title,
   disabled,
   type,
@@ -24,7 +24,7 @@ const Button = ({
   const buttonClass = variant ? styles[variant] : styles.primary;
   return (
     <button
-      onClick={handleClick}
+      onClick={onClick}
       className={buttonClass}
       type={type}
       title={title}
