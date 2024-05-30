@@ -77,7 +77,7 @@ const SideBar = () => {
             icon={button.icon}
             href={button.href}
             size={button.size}
-            color={`${button.href === currentPath ? '#F0F1FF' : '#85868B'}`}
+            color={`${button.href === currentPath ? '#0A0B10' : '#85868B'}`}
             weight={`${button.href === currentPath ? 'fill' : 'regular'}`}
             state={`${button.href === currentPath ? 'selected' : 'default'}`}
           />
