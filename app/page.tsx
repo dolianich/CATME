@@ -9,18 +9,18 @@ import zelda from '../app/src/gamesImages/zelda.png';
 import superMario from '../app/src/gamesImages/super-mario.png';
 
 const games = [
-  { title: 'Hollow Knight', category: 'ARCADE', cover: hollowKnight },
-  { title: 'Cuphead', category: 'MINI-GAME', cover: cuphead },
-  { title: 'Zelda', category: 'DEGEN', cover: zelda },
-  { title: 'Super Mario', category: 'P2E', cover: superMario },
-  { title: 'Unknown', category: 'P2E' },
-  { title: 'Unknown', category: 'P2E' },
-  { title: 'Unknown', category: 'P2E' },
-  { title: 'Unknown', category: 'P2E' },
-  { title: 'Unknown', category: 'P2E' },
-  { title: 'Unknown', category: 'P2E' },
-  { title: 'Unknown', category: 'P2E' },
-  { title: 'Unknown', category: 'P2E' },
+  { id: '1', title: 'Hollow Knight', category: 'ARCADE', cover: hollowKnight },
+  { id: '2', title: 'Cuphead', category: 'MINI-GAME', cover: cuphead },
+  { id: '3', title: 'Zelda', category: 'DEGEN', cover: zelda },
+  { id: '4', title: 'Super Mario', category: 'P2E', cover: superMario },
+  { id: '6', title: 'Unknown', category: 'P2E' },
+  { id: '7', title: 'Unknown', category: 'P2E' },
+  { id: '8', title: 'Unknown', category: 'P2E' },
+  { id: '9', title: 'Unknown', category: 'P2E' },
+  { id: '10', title: 'Unknown', category: 'P2E' },
+  { id: '11', title: 'Unknown', category: 'P2E' },
+  { id: '12', title: 'Unknown', category: 'P2E' },
+  { id: '13', title: 'Unknown', category: 'P2E' },
 ];
 
 const play = (gameTitle: string) =>
@@ -37,6 +37,7 @@ export default function Home() {
       <div className={styles.cardsSection}>
         {games.map((game) => (
           <GameCard
+            key={game.id}
             infoClick={() => getInfo(game.title)}
             watchClick={() => addToWatchlist(game.title)}
             playClick={() => play(game.title)}
