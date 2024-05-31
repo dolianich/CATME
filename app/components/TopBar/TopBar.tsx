@@ -5,9 +5,9 @@ import styles from './TopBar.module.css';
 import Button from '../Button/Button';
 import Avatar from '../Avatar/Avatar';
 import { useState } from 'react';
+import Logo from '../Logo/Logo';
 
 const TopBar = () => {
-
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const authClick = () => {
     setIsAuthenticated(!isAuthenticated);
@@ -17,7 +17,7 @@ const TopBar = () => {
   const avatarClick = () => {
     setIsAuthenticated(!isAuthenticated);
     console.log('Avatar was clicked; Logged out');
-  }
+  };
 
   const handleSearchChange = (value: string) => {
     console.log('Search term:', value);
@@ -34,16 +34,14 @@ const TopBar = () => {
         onChange={handleSearchChange}
         onSearch={handleCustomSearch}
       ></SearchInput>
-      {isAuthenticated ? (
-        <Avatar
-        type='default'
-          onClick={avatarClick}
-        />
-      ) : (
-        <Button title={'START PLAYING'} variant="secondary" onClick={authClick}>
+        <div className={styles.firstSection}>
+          <div className={styles.logo}>
+            <Logo />
+          </div>
+          {isAuthenticated ? (<Avatar type="default" onClick={avatarClick} />) : (<Button title={'START PLAYING'} variant="secondary" onClick={authClick}>
           START PLAYING
-        </Button>
-      )}
+        </Button>)}
+        </div>
     </div>
   );
 };

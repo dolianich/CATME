@@ -10,9 +10,28 @@
     background-color: #0A0B10;
 }
 
+.firstSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.logo{
+    display: none;
+}
+
 @media (max-width: 1050px) { 
     .topBarContainer {
       flex-direction: column-reverse;
       gap: 24px;
+    }
+}
+
+@media (max-width: 600px) { 
+    .logo{
+        display: flex;
+    }
+    .firstSection{
+        justify-content: space-between;
     }
 }

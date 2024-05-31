@@ -4,6 +4,7 @@ import styles from './Logo.module.css';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import logoAnimation from './src/cat_logo.json';
 
+
 const Logo = () => {
   return (
     <div className={styles.logoContainer}>

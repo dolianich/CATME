@@ -25,7 +25,7 @@
 }
 
 .inputContainer input:focus{
-    border-color: #85868B;
+    border-color: #F0F1FF;
 }
 
 .inputContainer input::placeholder{
