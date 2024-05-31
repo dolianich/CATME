@@ -8,11 +8,12 @@ type AvatarType = 'pfp' | 'default';
 interface Props {
   type: AvatarType;
   imageUrl?: string;
+  onClick?: () => void;
 }
 
-const Avatar = ({ type, imageUrl }: Props) => {
+const Avatar = ({ type, imageUrl, onClick }: Props) => {
   return (
-    <div className={styles.avatarContainer}>
+    <div className={styles.avatarContainer} onClick={onClick}>
       {type === 'pfp' ? (
         <img src={imageUrl} alt="User Avatar" className={styles.avatar}/>
       ) : (
