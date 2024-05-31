@@ -26,18 +26,20 @@ const GameCard = ({ title, tagLabel, tagVariant, imageUrl, playClick, watchClick
       {imageUrl ? (
         <Image
           src={imageUrl}
-          height={200}
+         
           alt="Game Cover"
           className={styles.image}
           quality={100}
+          style={{ width: '100%', height: 200 }}
         />
       ) : (
         <Image
           src={gameImage}
-          height={200}
+          
           alt="Game Cover"
           className={styles.image}
           quality={100}
+          style={{ width: '100%', height: 200 }}
         />
       )}
       <h2>{title}</h2>
