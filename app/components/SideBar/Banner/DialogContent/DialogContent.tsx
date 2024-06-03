@@ -10,13 +10,13 @@ const DialogContent = () => {
       <Image
         src={nft}
         alt="NFT"
-        width={360}
-        height={360}
+        width={300}
+        height={300}
         quality={100}
         className={styles.nft}
       />
       <h1>WELCOME BADGE</h1>
-      <p>Welcome to the future of WEB3 gaming!<br />Your CATME membership starts here,<br />unlocking gaming adventures</p>
+      <p>Welcome to the future of WEB3 gaming!<br />Your CATME membership starts here<br />by unlocking endless gaming adventures</p>
       <Button variant="quaternary" title="CLAIM NFT">
         CLAIM NFT
       </Button>
