@@ -1,8 +1,8 @@
 .dialog {
-    background-color: #1B1E23;
+    background-color: #0A0B10;
     border-radius: 32px;
-    border: solid 1px;
-    border-color: #42464B;
+    padding: 0;
+    border: none;
 }
 
 

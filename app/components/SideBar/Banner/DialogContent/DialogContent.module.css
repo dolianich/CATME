@@ -1,9 +1,32 @@
+.dialogContainer{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
-.dialog{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
+.nft{
+    border-radius: 24px;
+}
+
+.dialogContainer h1{
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #F0F1FF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0;
+    padding-top: 4px;
+}
+
+.dialogContainer p{
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #85868B;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    padding-bottom: 12px;
 }
