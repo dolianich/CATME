@@ -16,8 +16,8 @@ const DialogContent = () => {
         className={styles.nft}
       />
       <h1>WELCOME BADGE</h1>
-      <p>Welcome to the future of WEB3 gaming!<br />Your CATME membership starts here<br />by unlocking endless gaming adventures</p>
-      <Button variant="quaternary" title="CLAIM NFT">
+      <p>Welcome to the future of WEB3 Gaming!<br />Your CATME membership starts here<br />by unlocking endless gaming adventures</p>
+      <Button variant="senary" title="CLAIM NFT">
         CLAIM NFT
       </Button>
     </div>

@@ -34,7 +34,7 @@ const Banner = () => {
       />
       <Button
         title={'CLAIM NFT'}
-        variant="quaternary"
+        variant="senary"
         onClick={() => {
           setDialogContent(<DialogContent />);
           toggleDialog();
