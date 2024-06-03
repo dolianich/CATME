@@ -99,3 +99,28 @@
 .quaternary:active {
     scale: 0.95;
 }
+
+.senary{
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    padding-right: 36px;
+    cursor: pointer;
+    border-radius: 24px;
+    background-color: #A257FF;
+    color: #0A0B10;
+    border: none;
+}
+
+.senary:hover {
+    opacity: 80%;
+}
+
+.senary:active {
+    scale: 0.95;
+}

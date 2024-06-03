@@ -29,6 +29,7 @@ const Banner = () => {
         alt="NFT"
         width={178}
         height={178}
+        quality={100}
         className={styles.image}
       />
       <Button
