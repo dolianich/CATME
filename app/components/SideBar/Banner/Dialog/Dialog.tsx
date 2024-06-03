@@ -1,22 +1,22 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styles from './Dialog.module.css';
+import { forwardRef } from 'react';
 
-interface Props {
-  onClose: () => void;
-  isOpen: boolean;
+interface Props{
+    children: React.ReactNode;
+    toggleDialog: () => void;
 }
 
-const Dialog = ({ onClose, isOpen }: Props) => {
+const Dialog = forwardRef<HTMLDialogElement, Props>(({children, toggleDialog}, ref) => {
   return (
-    <div>
-      {isOpen && (
-        <dialog className={styles.dialog}>
-          <h1>NFT Claim</h1>
-          <button onClick={onClose}>Close</button>
-        </dialog>
-      )}
-    </div>
+    <dialog
+      ref={ref}
+      onClick={(e) => e.currentTarget === e.target && toggleDialog()}
+    >
+      {children}
+      <button onClick={toggleDialog}>Close</button>
+    </dialog>
   );
-};
+});
 
 export default Dialog;

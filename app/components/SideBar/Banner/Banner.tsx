@@ -4,8 +4,13 @@ import nft from './src/FreeNFT.png';
 import styles from './Banner.module.css';
 import Button from '../../Button/Button';
 import { useRef } from 'react';
+import { useState } from 'react';
+import DialogContent from './DialogContent/DialogContent';
+import Dialog from './Dialog/Dialog';
 
 const Banner = () => {
+  const [dialogContent, setDialogContent] = useState<React.ReactNode>(null);
+
   const dialogRef = useRef<HTMLDialogElement>(null);
 
   const toggleDialog = () => {
@@ -26,10 +31,17 @@ const Banner = () => {
         height={178}
         className={styles.image}
       />
-      <Button title={'CLAIM NFT'} variant="quaternary" onClick={toggleDialog}>
+      <Button
+        title={'CLAIM NFT'}
+        variant="quaternary"
+        onClick={() => {
+          setDialogContent(<DialogContent />);
+          toggleDialog();
+        }}
+      >
         CLAIM NFT
       </Button>
-      <dialog ref={dialogRef}>Content</dialog>
+      <Dialog toggleDialog={toggleDialog} ref={dialogRef}>{dialogContent}</Dialog>
     </div>
   );
 };
