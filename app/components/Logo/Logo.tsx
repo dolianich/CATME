@@ -4,10 +4,13 @@ import styles from './Logo.module.css';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import logoAnimation from './src/cat_logo.json';
 
+interface Props {
+  onClick?: () => void;
+}
 
-const Logo = () => {
+const Logo = ({ onClick }: Props) => {
   return (
-    <div className={styles.logoContainer}>
+    <div className={styles.logoContainer} onClick={onClick}>
       <Player
         autoplay
         loop

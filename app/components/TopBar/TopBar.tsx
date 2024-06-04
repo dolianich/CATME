@@ -27,6 +27,10 @@ const TopBar = () => {
     console.log('Custom search action triggered!');
   };
 
+  const logoClick = () => {
+    console.log('toggle menu');
+  };
+
   return (
     <div className={styles.topBarContainer}>
       <SearchInput
@@ -34,14 +38,22 @@ const TopBar = () => {
         onChange={handleSearchChange}
         onSearch={handleCustomSearch}
       ></SearchInput>
-        <div className={styles.firstSection}>
-          <div className={styles.logo}>
-            <Logo />
-          </div>
-          {isAuthenticated ? (<Avatar type="default" onClick={avatarClick} />) : (<Button title={'START PLAYING'} variant="secondary" onClick={authClick}>
-          START PLAYING
-        </Button>)}
+      <div className={styles.firstSection}>
+        <div className={styles.logo}>
+          <Logo onClick={logoClick} />
         </div>
+        {isAuthenticated ? (
+          <Avatar type="default" onClick={avatarClick} />
+        ) : (
+          <Button
+            title={'START PLAYING'}
+            variant="secondary"
+            onClick={authClick}
+          >
+            START PLAYING
+          </Button>
+        )}
+      </div>
     </div>
   );
 };
