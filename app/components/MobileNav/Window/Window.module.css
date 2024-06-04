@@ -1,0 +1,14 @@
+.menu {
+    background-color: #1B1E23;
+    border-radius: 32px;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+.menu::backdrop{
+    background-color: #0A0B10;
+    opacity: 0.82;
+}

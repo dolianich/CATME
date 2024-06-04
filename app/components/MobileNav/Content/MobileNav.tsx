@@ -1,8 +1,8 @@
-'use client'
+'use client';
 import React from 'react';
 import styles from './MobileNav.module.css';
 import { usePathname } from 'next/navigation';
-import NavButton from '../SideBar/NavButton/NavButton';
+import NavButton from '../../SideBar/NavButton/NavButton';
 import {
   Trophy,
   SquaresFour,
@@ -13,7 +13,11 @@ import {
   Eye,
 } from '@phosphor-icons/react';
 
-const MobileNav = () => {
+interface Props{
+  onClick?: () => void;
+}
+
+const MobileNav = ({onClick}: Props) => {
   const currentPath = usePathname();
   const navButtons = [
     {
@@ -73,6 +77,7 @@ const MobileNav = () => {
             color={`${button.href === currentPath ? '#0A0B10' : '#85868B'}`}
             weight={`${button.href === currentPath ? 'fill' : 'regular'}`}
             state={`${button.href === currentPath ? 'selected' : 'default'}`}
+            onClick={onClick}
           />
         ))}
       </nav>

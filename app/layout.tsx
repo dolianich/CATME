@@ -6,10 +6,6 @@ import TopBar from './components/TopBar/TopBar';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const logoClick = () => {
-  console.log('toggle menu');
-};
-
 export const metadata: Metadata = {
   title: 'CATME App',
   description: 'Web3 Games for everyone',
@@ -23,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-          <SideBar />
+        <SideBar />
         <div className="main">
           <TopBar />
           <main>{children} </main>

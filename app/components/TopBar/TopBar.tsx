@@ -6,12 +6,11 @@ import Button from '../Button/Button';
 import Avatar from '../Avatar/Avatar';
 import { useState } from 'react';
 import Logo from '../Logo/Logo';
+import { useRef } from 'react';
+import Window from '../MobileNav/Window/Window';
+import MobileNav from '../MobileNav/Content/MobileNav';
 
-interface Props {
-  logoClick?: () => {};
-}
-
-const TopBar = ({logoClick}: Props) => {
+const TopBar = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const authClick = () => {
     setIsAuthenticated(!isAuthenticated);
@@ -31,6 +30,19 @@ const TopBar = ({logoClick}: Props) => {
     console.log('Custom search action triggered!');
   };
 
+  const [menuContent, setMenuContent] = useState<React.ReactNode>(null);
+
+  const menuRef = useRef<HTMLDialogElement>(null);
+
+  const toggleMenu = () => {
+    if (!menuRef.current) {
+      return;
+    }
+    menuRef.current.hasAttribute('open')
+      ? menuRef.current.close()
+      : menuRef.current.showModal();
+  };
+
   return (
     <div className={styles.topBarContainer}>
       <SearchInput
@@ -40,7 +52,15 @@ const TopBar = ({logoClick}: Props) => {
       ></SearchInput>
       <div className={styles.firstSection}>
         <div className={styles.logo}>
-          <Logo onClick={logoClick} />
+          <Logo
+            onClick={() => {
+              setMenuContent(<MobileNav />);
+              toggleMenu();
+            }}
+          />
+          <Window toggleMenu={toggleMenu} ref={menuRef}>
+            {menuContent}
+          </Window>
         </div>
         {isAuthenticated ? (
           <Avatar type="default" onClick={avatarClick} />
