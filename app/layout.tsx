@@ -6,6 +6,10 @@ import TopBar from './components/TopBar/TopBar';
 
 const inter = Inter({ subsets: ['latin'] });
 
+const logoClick = () => {
+  console.log('toggle menu');
+};
+
 export const metadata: Metadata = {
   title: 'CATME App',
   description: 'Web3 Games for everyone',

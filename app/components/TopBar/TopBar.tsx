@@ -7,7 +7,11 @@ import Avatar from '../Avatar/Avatar';
 import { useState } from 'react';
 import Logo from '../Logo/Logo';
 
-const TopBar = () => {
+interface Props {
+  logoClick?: () => {};
+}
+
+const TopBar = ({logoClick}: Props) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const authClick = () => {
     setIsAuthenticated(!isAuthenticated);
@@ -25,10 +29,6 @@ const TopBar = () => {
 
   const handleCustomSearch = () => {
     console.log('Custom search action triggered!');
-  };
-
-  const logoClick = () => {
-    console.log('toggle menu');
   };
 
   return (

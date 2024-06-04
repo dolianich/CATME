@@ -1,0 +1,17 @@
+.navWrapper{
+    display: fixed;
+    background-color: #1B1E23;
+    margin-top: 176px;
+    height: 100dvh;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.navContainer{
+    padding-left: 24px;
+    padding-right: 24px;
+}
