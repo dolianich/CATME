@@ -9,21 +9,27 @@ import {
   TreasureChest,
   Newspaper,
   Storefront,
-  UsersThree,
+  GameController,
   Eye,
 } from '@phosphor-icons/react';
 
-interface Props{
+interface Props {
   onClick?: () => void;
 }
 
-const MobileNav = ({onClick}: Props) => {
+const MobileNav = ({ onClick }: Props) => {
   const currentPath = usePathname();
   const navButtons = [
     {
       label: 'Discover',
       href: '/',
       icon: SquaresFour,
+      size: 24,
+    },
+    {
+      label: 'Games',
+      href: '/games',
+      icon: GameController,
       size: 24,
     },
     {
@@ -39,21 +45,9 @@ const MobileNav = ({onClick}: Props) => {
       size: 24,
     },
     {
-      label: 'News',
-      href: '/news',
-      icon: Newspaper,
-      size: 24,
-    },
-    {
       label: 'Marketplace',
       href: '/marketplace',
       icon: Storefront,
-      size: 24,
-    },
-    {
-      label: 'Community',
-      href: '/community',
-      icon: UsersThree,
       size: 24,
     },
     {

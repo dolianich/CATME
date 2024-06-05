@@ -8,7 +8,7 @@ import {
   TreasureChest,
   Newspaper,
   Storefront,
-  UsersThree,
+  GameController,
   Eye,
 } from '@phosphor-icons/react';
 import styles from './SideBar.module.css';
@@ -26,6 +26,12 @@ const SideBar = () => {
       size: 24,
     },
     {
+      label: 'Games',
+      href: '/games',
+      icon: GameController,
+      size: 24,
+    },
+    {
       label: 'Leaderboard',
       href: '/leaderboard',
       icon: Trophy,
@@ -38,21 +44,9 @@ const SideBar = () => {
       size: 24,
     },
     {
-      label: 'News',
-      href: '/news',
-      icon: Newspaper,
-      size: 24,
-    },
-    {
       label: 'Marketplace',
       href: '/marketplace',
       icon: Storefront,
-      size: 24,
-    },
-    {
-      label: 'Community',
-      href: '/community',
-      icon: UsersThree,
       size: 24,
     },
     {
