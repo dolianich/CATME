@@ -21,7 +21,7 @@ const SideBar = () => {
   const navButtons = [
     {
       label: 'Discover',
-      href: '/',
+      href: '/discover',
       icon: SquaresFour,
       size: 24,
     },
@@ -56,27 +56,32 @@ const SideBar = () => {
       size: 24,
     },
   ];
+
   return (
     <div className={styles.sideBar}>
-     <div>
-      <div className={styles.logoSection}>
-        <Logo />
-        {/*<h2>CATME</h2>*/}
-      </div>
-      <nav className={styles.navContainer}>
-        {navButtons.map((button) => (
-          <NavButton
-            key={button.href}
-            text={button.label}
-            icon={button.icon}
-            href={button.href}
-            size={button.size}
-            color={`${button.href === currentPath ? '#0A0B10' : '#85868B'}`}
-            weight={`${button.href === currentPath ? 'fill' : 'regular'}`}
-            state={`${button.href === currentPath ? 'selected' : 'default'}`}
-          />
-        ))}
-      </nav>
+      <div>
+        <div className={styles.logoSection}>
+          <Logo />
+          {/*<h2>CATME</h2>*/}
+        </div>
+        <nav className={styles.navContainer}>
+          {navButtons.map((button) => (
+            <NavButton
+              key={button.href}
+              text={button.label}
+              icon={button.icon}
+              href={button.href}
+              size={button.size}
+              weight={`${
+                button.href === currentPath ||
+                currentPath.startsWith(button.href)
+                  ? 'fill'
+                  : 'regular'
+              }`}
+              state={`${button.href === currentPath ? 'selected' : 'default'}`}
+            />
+          ))}
+        </nav>
       </div>
       <Banner />
     </div>

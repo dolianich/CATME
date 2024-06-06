@@ -23,6 +23,7 @@ const NavButton = ({
   state,
   onClick
 }: Props) => {
+  
   const buttonClass = state ? styles[state] : styles.default;
   return (
     <Link href={href || '#'} className={styles.linkRoot}>

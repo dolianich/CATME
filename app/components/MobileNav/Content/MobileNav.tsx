@@ -22,7 +22,7 @@ const MobileNav = ({ onClick }: Props) => {
   const navButtons = [
     {
       label: 'Discover',
-      href: '/',
+      href: '/discover',
       icon: SquaresFour,
       size: 24,
     },
@@ -68,9 +68,15 @@ const MobileNav = ({ onClick }: Props) => {
             icon={button.icon}
             href={button.href}
             size={button.size}
-            color={`${button.href === currentPath ? '#0A0B10' : '#85868B'}`}
-            weight={`${button.href === currentPath ? 'fill' : 'regular'}`}
-            state={`${button.href === currentPath ? 'selected' : 'default'}`}
+            color={`${
+              currentPath.startsWith(button.href) ? '#0A0B10' : '#85868B'
+            }`}
+            weight={`${
+              currentPath.startsWith(button.href) ? 'fill' : 'regular'
+            }`}
+            state={`${
+              currentPath.startsWith(button.href) ? 'selected' : 'default'
+            }`}
             onClick={onClick}
           />
         ))}
