@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react';
 import { forwardRef } from 'react';
 import styles from './Window.module.css'
@@ -7,11 +8,9 @@ interface Props {
     toggleMenu: () => void;
   }
 
-const Window = forwardRef<HTMLDialogElement, Props>(
+const Window = forwardRef<HTMLDialogElement, Props>( 
     ({ children, toggleMenu }, ref) => {
       
-      const delay = 1000;
-
       return (
         <dialog
           className={styles.menu}
@@ -24,5 +23,7 @@ const Window = forwardRef<HTMLDialogElement, Props>(
       );
     }
   );
+
+
 
 export default Window
