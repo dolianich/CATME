@@ -33,7 +33,7 @@ const getInfo = (gameTitle: string) =>
 export default function Home() {
   return (
     <div>
-      <Heading>Recommended Games</Heading>
+      <Heading>Recommend Games</Heading>
       <div className={styles.cardsSection}>
         {games.map((game) => (
           <GameCard
