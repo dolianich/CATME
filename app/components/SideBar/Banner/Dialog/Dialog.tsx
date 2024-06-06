@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React, { ReactNode } from 'react';
 import styles from './Dialog.module.css';
 import { forwardRef } from 'react';
