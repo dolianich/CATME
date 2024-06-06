@@ -72,13 +72,21 @@ const SideBar = () => {
               icon={button.icon}
               href={button.href}
               size={button.size}
+              color={`${
+                currentPath.startsWith(button.href) ? '#0A0B10' : '#85868B'
+              }`}
               weight={`${
                 button.href === currentPath ||
                 currentPath.startsWith(button.href)
                   ? 'fill'
                   : 'regular'
               }`}
-              state={`${button.href === currentPath ? 'selected' : 'default'}`}
+              state={`${
+                button.href === currentPath ||
+                currentPath.startsWith(button.href)
+                  ? 'selected'
+                  : 'default'
+              }`}
             />
           ))}
         </nav>
