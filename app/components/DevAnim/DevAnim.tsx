@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import devAnimation from './src/catme_development.json';
