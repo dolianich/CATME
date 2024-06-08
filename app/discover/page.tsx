@@ -38,7 +38,6 @@ export default function Home() {
           <GameCard
             key={game.id}
             infoClick={() => getInfo(game.title)}
-            watchClick={() => addToWatchlist(game.title)}
             playClick={() => play(game.title)}
             imageUrl={game.cover}
             title={game.title}

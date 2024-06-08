@@ -17,6 +17,7 @@
 
 .outlined:active{
     scale: 0.95;
+    background-color: #1B1E23;
 }
 
 .primary{

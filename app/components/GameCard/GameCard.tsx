@@ -5,9 +5,10 @@ import Tag from '../Tag/Tag';
 import Image, { StaticImageData } from 'next/image';
 import gameImage from '../../src/gamesImages/game.png';
 import IconButton from '../IconButton/IconButton';
-import { Eye, Info } from '@phosphor-icons/react';
+import { Heart, Info } from '@phosphor-icons/react';
 import Button from '../Button/Button';
 import { TagVariant } from '../Tag/Tag';
+import { useState } from 'react';
 
 interface Props {
   title?: string;
@@ -15,18 +16,28 @@ interface Props {
   tagVariant?: TagVariant;
   imageUrl?: StaticImageData;
   playClick?: () => void;
-  watchClick?: () => void;
-  infoClick?: () => void
+  infoClick?: () => void;
 }
 
+const GameCard = ({
+  title,
+  tagLabel,
+  tagVariant,
+  imageUrl,
+  playClick,
+  infoClick,
+}: Props) => {
+  const [addedToWatchlist, setAddedToWatchlist] = useState(false);
+  const addToWatchlist = () => {
+    setAddedToWatchlist(!addedToWatchlist);
+    console.log('Add ' + title + ' to the watchlist');
+  };
 
-const GameCard = ({ title, tagLabel, tagVariant, imageUrl, playClick, watchClick, infoClick }: Props) => {
   return (
     <div className={styles.cardContainer}>
       {imageUrl ? (
         <Image
           src={imageUrl}
-         
           alt="Game Cover"
           className={styles.image}
           quality={100}
@@ -35,7 +46,6 @@ const GameCard = ({ title, tagLabel, tagVariant, imageUrl, playClick, watchClick
       ) : (
         <Image
           src={gameImage}
-          
           alt="Game Cover"
           className={styles.image}
           quality={100}
@@ -52,8 +62,9 @@ const GameCard = ({ title, tagLabel, tagVariant, imageUrl, playClick, watchClick
             size={24}
             color="#85868B"
             variant="outlined"
-            icon={Eye}
-            onClick={watchClick}
+            weight={addedToWatchlist ? 'fill' : 'regular'}
+            icon={Heart}
+            onClick={addToWatchlist}
           />
           <IconButton
             size={24}
