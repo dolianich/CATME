@@ -27,6 +27,16 @@
     margin: 0;
 }
 
+.cardContainer p{
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: left;
+    color: #85868B;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
 .tagsContainer{
     display: flex;
     flex-direction: row;
@@ -39,11 +49,17 @@
     gap: 12px;
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
 .buttonsContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 12px;
+    margin-top: 6px;
 }
 
 @media(max-width: 650px){

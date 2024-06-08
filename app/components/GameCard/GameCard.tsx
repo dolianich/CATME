@@ -13,10 +13,12 @@ import { useState } from 'react';
 interface Props {
   title?: string;
   tagLabel: string;
+  tagPrice: string;
   tagVariant?: TagVariant;
   imageUrl?: StaticImageData;
   playClick?: () => void;
   infoClick?: () => void;
+  description?: string;
 }
 
 const GameCard = ({
@@ -26,6 +28,8 @@ const GameCard = ({
   imageUrl,
   playClick,
   infoClick,
+  tagPrice,
+  description,
 }: Props) => {
   const [addedToWatchlist, setAddedToWatchlist] = useState(false);
   const addToWatchlist = () => {
@@ -52,9 +56,13 @@ const GameCard = ({
           style={{ width: '100%', height: 200 }}
         />
       )}
-      <h2>{title}</h2>
+      <div className={styles.info}>
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </div>
       <div className={styles.tagsContainer}>
         <Tag tagVariant={tagVariant}>{tagLabel}</Tag>
+        <Tag tagVariant="price">{tagPrice}</Tag>
       </div>
       <div className={styles.buttonsContainer}>
         <div className={styles.actionContainer}>
