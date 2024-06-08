@@ -8,7 +8,7 @@ import zelda from '../src/gamesImages/zelda.png';
 import superMario from '../src/gamesImages/super-mario.png';
 
 const games = [
-  { id: '1', title: 'Hollow Knight', category: 'ARCADE', cover: hollowKnight },
+  { id: '1', title: 'Hollow Knight', category: 'arcade', cover: hollowKnight },
   { id: '2', title: 'Cuphead', category: 'MINI-GAME', cover: cuphead },
   { id: '3', title: 'Zelda', category: 'DEGEN', cover: zelda },
   { id: '4', title: 'Super Mario', category: 'P2E', cover: superMario },
