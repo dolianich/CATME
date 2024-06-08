@@ -27,14 +27,13 @@ const GameCard = ({
   tagVariant,
   imageUrl,
   playClick,
-  infoClick,
   tagPrice,
   description,
 }: Props) => {
-  const [addedToWatchlist, setAddedToWatchlist] = useState(false);
-  const addToWatchlist = () => {
-    setAddedToWatchlist(!addedToWatchlist);
-    console.log('Add ' + title + ' to the watchlist');
+  const [addedToFavorites, setAddedToFavorites] = useState(false);
+  const addToFavorites = () => {
+    setAddedToFavorites(!addedToFavorites);
+    console.log('Add ' + title + ' to the favorites');
   };
 
   return (
@@ -70,16 +69,9 @@ const GameCard = ({
             size={24}
             color="#85868B"
             variant="outlined"
-            weight={addedToWatchlist ? 'fill' : 'regular'}
+            weight={addedToFavorites ? 'fill' : 'regular'}
             icon={Heart}
-            onClick={addToWatchlist}
-          />
-          <IconButton
-            size={24}
-            color="#85868B"
-            variant="outlined"
-            icon={Info}
-            onClick={infoClick}
+            onClick={addToFavorites}
           />
         </div>
         <Button title="PLAY" variant="tertiary" onClick={playClick}>

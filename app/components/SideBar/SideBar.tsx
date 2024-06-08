@@ -1,15 +1,13 @@
 'use client';
-
 import React from 'react';
 import NavButton from './NavButton/NavButton';
 import {
   Trophy,
   SquaresFour,
   TreasureChest,
-  Newspaper,
   Storefront,
   GameController,
-  Eye,
+  Heart,
 } from '@phosphor-icons/react';
 import styles from './SideBar.module.css';
 import { usePathname } from 'next/navigation';
@@ -50,9 +48,9 @@ const SideBar = () => {
       size: 24,
     },
     {
-      label: 'Watchlist',
-      href: '/watchlist',
-      icon: Eye,
+      label: 'Favorites',
+      href: '/favorites',
+      icon: Heart,
       size: 24,
     },
   ];

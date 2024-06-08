@@ -7,10 +7,9 @@ import {
   Trophy,
   SquaresFour,
   TreasureChest,
-  Newspaper,
   Storefront,
   GameController,
-  Eye,
+  Heart,
 } from '@phosphor-icons/react';
 
 interface Props {
@@ -51,9 +50,9 @@ const MobileNav = ({ onClick }: Props) => {
       size: 24,
     },
     {
-      label: 'Watchlist',
-      href: '/watchlist',
-      icon: Eye,
+      label: 'Favorites',
+      href: '/favorites',
+      icon: Heart,
       size: 24,
     },
   ];
