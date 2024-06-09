@@ -1,38 +1,43 @@
-import hollowKnight from '../src/gamesImages/hollowKnight.png';
-import cuphead from '../src/gamesImages/cupHead.jpeg';
-import zelda from '../src/gamesImages/zelda.png';
-import superMario from '../src/gamesImages/super-mario.png'; 
+import SpaceWalkCover from './SpaceWalk/src/SpaceWalkCover.png';
  
  export const gamesData = [
     {
       id: '1',
-      title: 'Hollow Knight',
+      title: 'Space Walk',
       category: 'arcade',
-      cover: hollowKnight,
+      cover: SpaceWalkCover,
       price: 'free',
       shortDescription: 'This is one line description of this game',
+      developer: '',
+      releaseDate: '',
+      fullDescription: '',
+      gameBuild: '',
+      status: ''
     },
     {
       id: '2',
-      title: 'Cuphead',
-      category: 'MINI-GAME',
-      cover: cuphead,
+      title: 'Space Walk',
+      category: 'arcade',
+      cover: SpaceWalkCover,
       price: 'free',
+      shortDescription: 'This is one line description of this game',
+      developer: '',
+      releaseDate: '',
+      fullDescription: '',
+      gameBuild: '',
+      status: ''
     },
-    { id: '3', title: 'Zelda', category: 'DEGEN', cover: zelda, price: 'free' },
     {
-      id: '4',
-      title: 'Super Mario',
-      category: 'P2E',
-      cover: superMario,
+      id: '2',
+      title: 'Space Walk',
+      category: 'arcade',
+      cover: SpaceWalkCover,
       price: 'free',
-    },
-    { id: '6', title: 'Another game', category: 'P2E', price: 'free' },
-    { id: '7', title: 'Unknown', category: 'P2E', price: 'free' },
-    { id: '8', title: 'Unknown', category: 'P2E', price: 'free' },
-    { id: '9', title: 'Unknown', category: 'P2E', price: 'free' },
-    { id: '10', title: 'Unknown', category: 'P2E', price: 'free' },
-    { id: '11', title: 'Unknown', category: 'P2E', price: 'free' },
-    { id: '12', title: 'Unknown', category: 'P2E', price: 'free' },
-    { id: '13', title: 'Unknown', category: 'P2E', price: 'free' },
+      shortDescription: 'This is one line description of this game',
+      developer: '',
+      releaseDate: '',
+      fullDescription: '',
+      gameBuild: '',
+      status: ''
+      },
   ];
