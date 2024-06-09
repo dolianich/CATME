@@ -7,7 +7,7 @@ import SpaceWalkCover from './SpaceWalk/src/SpaceWalkCover.png';
       category: 'arcade',
       cover: SpaceWalkCover,
       price: 'free',
-      shortDescription: 'This is one line description of this game',
+      shortDescription: '2D platformer game',
       developer: '',
       releaseDate: '',
       fullDescription: '',
@@ -28,7 +28,7 @@ import SpaceWalkCover from './SpaceWalk/src/SpaceWalkCover.png';
       status: ''
     },
     {
-      id: '2',
+      id: '3',
       title: 'Space Walk',
       category: 'arcade',
       cover: SpaceWalkCover,
