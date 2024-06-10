@@ -103,3 +103,9 @@
 .quaternary:active{
     scale: 0.95;
 }
+
+@media (max-width: 600px) { 
+    .outlined:hover{
+        background-color: none;
+    }
+}
