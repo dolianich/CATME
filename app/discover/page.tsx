@@ -2,16 +2,15 @@
 import styles from './page.module.css';
 import Heading from '../components/Heading/Heading';
 import GameCard from '../components/GameCard/GameCard';
-import {gamesData} from '../gameData/gamesData';
+import { gamesData } from '../gameData/gamesData';
+import { useRouter } from 'next/navigation';
 
-
-
-const play = (gameTitle: string) =>
-  console.log('Play a ' + gameTitle + ' game');
 const getInfo = (gameTitle: string) =>
   console.log('Show the information about the ' + gameTitle + ' game');
 
 export default function Home() {
+  const router = useRouter();
+  const playClick = (path: any) => router.push(`/games/${path}`);
   return (
     <div>
       <Heading>Recommended Games</Heading>
@@ -19,8 +18,7 @@ export default function Home() {
         {gamesData.map((game) => (
           <GameCard
             key={game.id}
-            infoClick={() => getInfo(game.title)}
-            playClick={() => play(game.title)}
+            onClick={() => playClick(game.path)}
             imageUrl={game.cover}
             title={game.title}
             description={game.shortDescription}

@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { Unity, useUnityContext } from 'react-unity-webgl';
+import styles from './page.module.css';
 
 const SpaceWalkPage = () => {
   const { unityProvider } = useUnityContext({
@@ -15,7 +16,9 @@ const SpaceWalkPage = () => {
   });
 
   return (
-    <Unity unityProvider={unityProvider} style={{ width: 800, height: 600 }} />
+    <div className={styles.wrapper}>
+      <Unity unityProvider={unityProvider} className={styles.gameWindow} />
+    </div>
   );
 };
 

@@ -16,9 +16,9 @@ interface Props {
   tagPrice: string;
   tagVariant?: TagVariant;
   imageUrl?: StaticImageData;
-  playClick?: () => void;
-  infoClick?: () => void;
   description?: string;
+  path?: string;
+  onClick?: () => void;
 }
 
 const GameCard = ({
@@ -26,9 +26,9 @@ const GameCard = ({
   tagLabel,
   tagVariant,
   imageUrl,
-  playClick,
   tagPrice,
   description,
+  onClick,
 }: Props) => {
   const [addedToFavorites, setAddedToFavorites] = useState(false);
   const addToFavorites = () => {
@@ -74,7 +74,7 @@ const GameCard = ({
             onClick={addToFavorites}
           />
         </div>
-        <Button title="PLAY" variant="tertiary" onClick={playClick}>
+        <Button title="PLAY" variant="tertiary" onClick={onClick}>
           PLAY
         </Button>
       </div>
