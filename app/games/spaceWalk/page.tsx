@@ -4,11 +4,14 @@ import { Unity, useUnityContext } from 'react-unity-webgl';
 
 const SpaceWalkPage = () => {
   const { unityProvider } = useUnityContext({
-    loaderUrl: 'https://github.com/dolianich/CATME/blob/c426871aae8a0f503a7d07148c519ebf5008f7ce/public/SpaceWalkBuild/Build/SpaceWalkBuild.loader.js',
-    dataUrl: 'public/SpaceWalkBuild/Build/SpaceWalkBuild.data',
+    loaderUrl:
+      'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/SpaceWalkBuild.loader-WSOzZPOgyU0y3HYUgzSMTyU112HWDw.js',
+    dataUrl:
+      'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/SpaceWalkBuild-H8SP2i9DMrrcNrStbeaADFkyde17Oc.data',
     frameworkUrl:
-      'public/SpaceWalkBuild/Build/SpaceWalkBuild.framework.js',
-    codeUrl: 'app/src/SpaceWalkBuild/Build/SpaceWalkBuild.wasm',
+      'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/SpaceWalkBuild.framework-VJKBL00IR6WOM2oVl21J9YQzTBmDR8.js',
+    codeUrl:
+      'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/SpaceWalkBuild-GAXcQdlG3IrbH5rFDdf6r5hTeyQ18P.wasm',
   });
 
   return (
