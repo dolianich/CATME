@@ -12,7 +12,7 @@ import SpaceWalkCover from './SpaceWalk/src/SpaceWalkCover.png';
       releaseDate: '',
       fullDescription: '',
       gameBuild: '',
-      status: ''
+      status: '',
     },
     {
       id: '2',

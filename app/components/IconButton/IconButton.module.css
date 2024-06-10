@@ -106,6 +106,6 @@
 
 @media (max-width: 600px) { 
     .outlined:hover{
-        background-color: none;
+        background-color: #1B1E23;
     }
 }
