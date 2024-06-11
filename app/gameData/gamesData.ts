@@ -1,5 +1,6 @@
 import SpaceWalkCover from './SpaceWalk/src/SpaceWalkCover.png';
 import SpaceInvadersCover from './SpaceInvaders/src/SpaceInvadersCover.png';
+import DeathDungeonCover from './DeathDungeon/src/DeathDungeonCoverpng.png';
  
  export const gamesData = [
     {
@@ -32,15 +33,17 @@ import SpaceInvadersCover from './SpaceInvaders/src/SpaceInvadersCover.png';
     },
     {
       id: '3',
-      title: 'Space Walk',
+      title: 'Death Dungeon',
       category: 'arcade',
-      cover: SpaceWalkCover,
+      cover: DeathDungeonCover,
       price: 'free',
-      shortDescription: 'This is one line description of this game',
+      shortDescription: 'The secret Dungeon',
       developer: '',
       releaseDate: '',
       fullDescription: '',
       gameBuild: '',
-      status: ''
+      status: '',
+      path: '/deathDungeon'
       },
+      
   ];
