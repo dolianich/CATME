@@ -1,6 +1,7 @@
 import SpaceWalkCover from './SpaceWalk/src/SpaceWalkCover.png';
 import SpaceInvadersCover from './SpaceInvaders/src/SpaceInvadersCover.png';
 import DeathDungeonCover from './DeathDungeon/src/DeathDungeonCoverpng.png';
+import PompaDroidCover from './PompaDroid/src/PompaDroidCover.png';
  
  export const gamesData = [
     {
@@ -44,6 +45,20 @@ import DeathDungeonCover from './DeathDungeon/src/DeathDungeonCoverpng.png';
       gameBuild: '',
       status: '',
       path: '/deathDungeon'
-      },
+    },
+    {
+      id: '4',
+      title: 'PompaDroid',
+      category: 'arcade',
+      cover: PompaDroidCover,
+      price: 'free',
+      shortDescription: 'The secret Dungeon',
+      developer: '',
+      releaseDate: '',
+      fullDescription: '',
+      gameBuild: '',
+      status: '',
+      path: '/pompaDroid'
+    },
       
   ];
