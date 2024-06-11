@@ -2,6 +2,7 @@ import SpaceWalkCover from './SpaceWalk/src/SpaceWalkCover.png';
 import SpaceInvadersCover from './SpaceInvaders/src/SpaceInvadersCover.png';
 import DeathDungeonCover from './DeathDungeon/src/DeathDungeonCoverpng.png';
 import PompaDroidCover from './PompaDroid/src/PompaDroidCover.png';
+import PackmanCover from './Packman/src/PackmanCover.png';
  
  export const gamesData = [
     {
@@ -61,18 +62,18 @@ import PompaDroidCover from './PompaDroid/src/PompaDroidCover.png';
       path: '/pompaDroid'
     },
     {
-      id: '4',
-      title: 'PompaDroid',
+      id: '5',
+      title: 'Packman',
       category: 'arcade',
-      cover: PompaDroidCover,
+      cover: PackmanCover,
       price: 'free',
-      shortDescription: 'Droid fighter',
+      shortDescription: 'Classic Packman',
       developer: '',
       releaseDate: '',
       fullDescription: '',
       gameBuild: '',
       status: '',
-      path: '/pompaDroid'
+      path: '/packman'
     },
       
   ];
