@@ -1,4 +1,5 @@
 import SpaceWalkCover from './SpaceWalk/src/SpaceWalkCover.png';
+import SpaceInvadersCover from './SpaceInvaders/src/SpaceInvadersCover.png';
  
  export const gamesData = [
     {
@@ -7,7 +8,7 @@ import SpaceWalkCover from './SpaceWalk/src/SpaceWalkCover.png';
       category: 'arcade',
       cover: SpaceWalkCover,
       price: 'free',
-      shortDescription: '2D platformer game',
+      shortDescription: '2D platformer',
       developer: '',
       releaseDate: '',
       fullDescription: '',
@@ -17,16 +18,17 @@ import SpaceWalkCover from './SpaceWalk/src/SpaceWalkCover.png';
     },
     {
       id: '2',
-      title: 'Space Walk',
+      title: 'Space Invader',
       category: 'arcade',
-      cover: SpaceWalkCover,
+      cover: SpaceInvadersCover,
       price: 'free',
-      shortDescription: 'This is one line description of this game',
+      shortDescription: 'Space shooter',
       developer: '',
       releaseDate: '',
       fullDescription: '',
       gameBuild: '',
-      status: ''
+      status: '',
+      path: '/spaceInvaders'
     },
     {
       id: '3',

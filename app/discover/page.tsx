@@ -5,8 +5,6 @@ import GameCard from '../components/GameCard/GameCard';
 import { gamesData } from '../gameData/gamesData';
 import { useRouter } from 'next/navigation';
 
-const getInfo = (gameTitle: string) =>
-  console.log('Show the information about the ' + gameTitle + ' game');
 
 export default function Home() {
   const router = useRouter();
