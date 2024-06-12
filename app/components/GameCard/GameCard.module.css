@@ -62,8 +62,14 @@
     margin-top: 6px;
 }
 
+.cardContainer:hover{
+    scale: 1.02;
+    transition: all ease-in-out 0.2s;
+}
+
 @media(max-width: 650px){
     .cardContainer{
         min-width: 300px;
+        scale: 1;
     }
 }
