@@ -5,6 +5,7 @@ import PompaDroidCover from './PompaDroid/src/PompaDroidCover.png';
 import PackmanCover from './Packman/src/PackmanCover.png';
 import FroggerCover from './Frogger/src/FroggerCover.png';
 import FlappyBirdCover from './FlappyBird/src/FlappyBirdCover.png';
+import SuperMarioCover from './SuperMarioBros/src/SuperMarioCover.png';
  
  export const gamesData = [
     {
@@ -104,6 +105,20 @@ import FlappyBirdCover from './FlappyBird/src/FlappyBirdCover.png';
       gameBuild: '',
       status: '',
       path: '/flappyBird'
+    },
+    {
+      id: '8',
+      title: 'Super Mario Bros.',
+      category: 'arcade',
+      cover: SuperMarioCover,
+      price: 'free',
+      shortDescription: 'Original Super Mario platformer from 1985',
+      developer: '',
+      releaseDate: '',
+      fullDescription: '',
+      gameBuild: '',
+      status: '',
+      path: '/superMarioBros'
     },
       
   ];
