@@ -4,6 +4,7 @@ import DeathDungeonCover from './DeathDungeon/src/DeathDungeonCoverpng.png';
 import PompaDroidCover from './PompaDroid/src/PompaDroidCover.png';
 import PackmanCover from './Packman/src/PackmanCover.png';
 import FroggerCover from './Frogger/src/FroggerCover.png';
+import FlappyBirdCover from './FlappyBird/src/FlappyBirdCover.png';
  
  export const gamesData = [
     {
@@ -77,7 +78,7 @@ import FroggerCover from './Frogger/src/FroggerCover.png';
       path: '/packman'
     },
     {
-      id: '5',
+      id: '6',
       title: 'Frogger',
       category: 'arcade',
       cover: FroggerCover,
@@ -89,6 +90,20 @@ import FroggerCover from './Frogger/src/FroggerCover.png';
       gameBuild: '',
       status: '',
       path: '/frogger'
+    },
+    {
+      id: '7',
+      title: 'Flappy Bird',
+      category: 'arcade',
+      cover: FlappyBirdCover,
+      price: 'free',
+      shortDescription: 'Click to fly!',
+      developer: '',
+      releaseDate: '',
+      fullDescription: '',
+      gameBuild: '',
+      status: '',
+      path: '/flappyBird'
     },
       
   ];
