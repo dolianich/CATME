@@ -3,6 +3,7 @@ import SpaceInvadersCover from './SpaceInvaders/src/SpaceInvadersCover.png';
 import DeathDungeonCover from './DeathDungeon/src/DeathDungeonCoverpng.png';
 import PompaDroidCover from './PompaDroid/src/PompaDroidCover.png';
 import PackmanCover from './Packman/src/PackmanCover.png';
+import FroggerCover from './Frogger/src/FroggerCover.png';
  
  export const gamesData = [
     {
@@ -74,6 +75,20 @@ import PackmanCover from './Packman/src/PackmanCover.png';
       gameBuild: '',
       status: '',
       path: '/packman'
+    },
+    {
+      id: '5',
+      title: 'Frogger',
+      category: 'arcade',
+      cover: FroggerCover,
+      price: 'free',
+      shortDescription: 'Frogger from 1981',
+      developer: '',
+      releaseDate: '',
+      fullDescription: '',
+      gameBuild: '',
+      status: '',
+      path: '/frogger'
     },
       
   ];
