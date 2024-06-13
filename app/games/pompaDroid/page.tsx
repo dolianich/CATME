@@ -3,6 +3,7 @@ import React from 'react';
 import { Unity, useUnityContext } from 'react-unity-webgl';
 import styles from './page.module.css';
 import Button from '@/app/components/Button/Button';
+import Heading from '@/app/components/Heading/Heading';
 
 const PompaDroidPage = () => {
   const { unityProvider, requestFullscreen } = useUnityContext({
@@ -21,16 +22,19 @@ const PompaDroidPage = () => {
   }
 
   return (
-    <div className={styles.wrapper}>
-      <Unity unityProvider={unityProvider} className={styles.gameWindow} />
-      <Button
-        onClick={handleClickEnterFullscreen}
-        title="ENTER FULL SCREEN"
-        variant="outlined"
-      >
-        ENTER FULLSCREEN
-      </Button>
-    </div>
+    <>
+      <Heading>Pompa Droid</Heading>
+      <div className={styles.wrapper}>
+        <Unity unityProvider={unityProvider} className={styles.gameWindow} />
+        <Button
+          onClick={handleClickEnterFullscreen}
+          title="ENTER FULL SCREEN"
+          variant="outlined"
+        >
+          ENTER FULLSCREEN
+        </Button>
+      </div>
+    </>
   );
 };
 

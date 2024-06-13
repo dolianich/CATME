@@ -2,6 +2,7 @@
 import React from 'react';
 import { Unity, useUnityContext } from 'react-unity-webgl';
 import styles from './page.module.css';
+import Heading from '@/app/components/Heading/Heading';
 
 const DeathDungeonPage = () => {
   const { unityProvider } = useUnityContext({
@@ -16,9 +17,12 @@ const DeathDungeonPage = () => {
   });
 
   return (
-    <div className={styles.wrapper}>
-      <Unity unityProvider={unityProvider} className={styles.gameWindow} />
-    </div>
+    <>
+      <Heading>Death Dungeon</Heading>
+      <div className={styles.wrapper}>
+        <Unity unityProvider={unityProvider} className={styles.gameWindow} />
+      </div>
+    </>
   );
 };
 
