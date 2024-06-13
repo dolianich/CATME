@@ -2,9 +2,10 @@
 import React from 'react';
 import { Unity, useUnityContext } from 'react-unity-webgl';
 import styles from './page.module.css';
+import Button from '@/app/components/Button/Button';
 
 const PompaDroidPage = () => {
-  const { unityProvider } = useUnityContext({
+  const { unityProvider, requestFullscreen } = useUnityContext({
     loaderUrl:
       'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/PompaDroidBuild.loader-Hg71jPqorXuFhhapZIzVhyEnD6oJiZ.js',
     dataUrl:
@@ -15,9 +16,20 @@ const PompaDroidPage = () => {
       'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/PompaDroidBuild-s9fMH9JaC3K8bhKPb52Rf9cz6PshHj.wasm',
   });
 
+  function handleClickEnterFullscreen() {
+    requestFullscreen(true);
+  }
+
   return (
     <div className={styles.wrapper}>
       <Unity unityProvider={unityProvider} className={styles.gameWindow} />
+      <Button
+        onClick={handleClickEnterFullscreen}
+        title="ENTER FULL SCREEN"
+        variant="outlined"
+      >
+        ENTER FULLSCREEN
+      </Button>
     </div>
   );
 };

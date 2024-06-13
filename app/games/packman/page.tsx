@@ -2,9 +2,10 @@
 import React from 'react';
 import { Unity, useUnityContext } from 'react-unity-webgl';
 import styles from './page.module.css';
+import Button from '@/app/components/Button/Button';
 
 const PackmanPage = () => {
-  const { unityProvider } = useUnityContext({
+  const { unityProvider, requestFullscreen } = useUnityContext({
     loaderUrl:
       'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/PackmanBuild.loader-hxrjHV6ibOtu05jVSdy7FNQBfNZ4Yt.js',
     dataUrl:
@@ -15,9 +16,20 @@ const PackmanPage = () => {
       'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/PackmanBuild-inKMVg96Y04aqfvkOOZ9DiJSGSTlbs.wasm',
   });
 
+  function handleClickEnterFullscreen() {
+    requestFullscreen(true);
+  }
+
   return (
     <div className={styles.wrapper}>
       <Unity unityProvider={unityProvider} className={styles.gameWindow} />
+      <Button
+        onClick={handleClickEnterFullscreen}
+        title="ENTER FULL SCREEN"
+        variant="outlined"
+      >
+        ENTER FULLSCREEN
+      </Button>
     </div>
   );
 };

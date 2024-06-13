@@ -24,9 +24,4 @@ body{
   .main {
     margin-left: 0;
   }
-  .main main{
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-bottom: 18px;
-  }
 }
