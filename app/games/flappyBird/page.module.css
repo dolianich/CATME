@@ -16,6 +16,6 @@
 
 @media (max-width: 600px) { 
     .wrapper{
-        height: 100vh;
+        height: calc(100dvh - 100px);
     }
 }
