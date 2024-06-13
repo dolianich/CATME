@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <Heading>Recommended Games</Heading>
       <div className={styles.cardsSection}>
-        {gamesData.map((game) => (
+        {gamesData.slice(0, 3).map((game) => (
           <GameCard
             key={game.id}
             onClick={() => playClick(game.path)}
