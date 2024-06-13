@@ -4,7 +4,7 @@ import { Unity, useUnityContext } from 'react-unity-webgl';
 import styles from './page.module.css';
 
 const FlappyBirdPage = () => {
-  const { unityProvider } = useUnityContext({
+  const { unityProvider, requestFullscreen } = useUnityContext({
     loaderUrl:
       'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/FlappyBirdBuild.loader-vECeUyE7LVgt6jcR0w6I5q1cl6j0pw.js',
     dataUrl:
@@ -15,9 +15,14 @@ const FlappyBirdPage = () => {
       'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/FlappyBirdBuild-QXTaU1Vtvez24aBAK3ka1UaFlMptYs.wasm',
   });
 
+  function handleClickEnterFullscreen() {
+    requestFullscreen(true);
+  }
+
   return (
     <div className={styles.wrapper}>
       <Unity unityProvider={unityProvider} className={styles.gameWindow} />
+      <button onClick={handleClickEnterFullscreen}>Enter Fullscreen</button>
     </div>
   );
 };
