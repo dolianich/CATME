@@ -66,11 +66,11 @@ const TopBar = () => {
           <Avatar type="default" onClick={avatarClick} />
         ) : (
           <Button
-            title={'START PLAYING'}
-            variant="primary"
+            title={'LOGIN'}
+            variant="outlined"
             onClick={authClick}
           >
-            START PLAYING
+            LOGIN
           </Button>
         )}
       </div>

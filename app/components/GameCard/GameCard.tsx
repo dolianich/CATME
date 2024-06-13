@@ -67,7 +67,7 @@ const GameCard = ({
         <div className={styles.actionContainer}>
           <IconButton
             size={24}
-            color="#85868B"
+            color={addedToFavorites ? '#F0F1FF' : '#85868B'}
             variant="outlined"
             weight={addedToFavorites ? 'fill' : 'regular'}
             icon={Heart}

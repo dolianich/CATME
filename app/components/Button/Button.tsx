@@ -8,7 +8,8 @@ type ButtonVariant =
   | 'tertiary'
   | 'quaternary'
   | 'senary'
-  | 'withIcon';
+  | 'withIcon'
+  | 'outlined';
 
 interface Props {
   children: React.ReactNode;

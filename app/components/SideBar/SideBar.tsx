@@ -73,7 +73,7 @@ const SideBar = () => {
               color={`${
                 button.href === currentPath ||
                 currentPath.startsWith(button.href)
-                  ? '#FF5756'
+                  ? '#F0F1FF'
                   : '#85868B'
               }`}
               weight={`${
