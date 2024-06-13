@@ -70,6 +70,8 @@
 @media(max-width: 650px){
     .cardContainer{
         min-width: 300px;
+    }
+    .cardContainer:hover{
         scale: 1;
     }
 }
