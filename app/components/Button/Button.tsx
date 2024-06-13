@@ -2,7 +2,13 @@ import React from 'react';
 import styles from './Button.module.css';
 
 type ButtonType = 'button' | 'submit' | 'reset' | undefined;
-type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'senary';
+type ButtonVariant =
+  | 'primary'
+  | 'secondary'
+  | 'tertiary'
+  | 'quaternary'
+  | 'senary'
+  | 'withIcon';
 
 interface Props {
   children: React.ReactNode;

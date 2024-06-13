@@ -124,3 +124,32 @@
 .senary:active {
     scale: 0.95;
 }
+
+.withIcon{
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.50px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    padding-right: 28px;
+    cursor: pointer;
+    border-radius: 24px;
+    background-color: #FF5756;
+    color: #0A0B10;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.withIcon:hover{
+    opacity: 80%;
+}
+
+.withIcon:active{
+    scale: 0.95;
+}

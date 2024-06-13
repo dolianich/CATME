@@ -5,7 +5,7 @@ import Tag from '../Tag/Tag';
 import Image, { StaticImageData } from 'next/image';
 import gameImage from '../../src/gamesImages/game.png';
 import IconButton from '../IconButton/IconButton';
-import { Heart, Info } from '@phosphor-icons/react';
+import { Heart, GameController } from '@phosphor-icons/react';
 import Button from '../Button/Button';
 import { TagVariant } from '../Tag/Tag';
 import { useState } from 'react';
@@ -74,8 +74,8 @@ const GameCard = ({
             onClick={addToFavorites}
           />
         </div>
-        <Button title="PLAY" variant="primary" onClick={onClick}>
-          PLAY
+        <Button title="PLAY" variant="withIcon" onClick={onClick}>
+          <GameController size={24} weight="fill" color="#0A0B10" /> PLAY
         </Button>
       </div>
     </div>
