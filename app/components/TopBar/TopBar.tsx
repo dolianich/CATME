@@ -67,7 +67,7 @@ const TopBar = () => {
         ) : (
           <Button
             title={'START PLAYING'}
-            variant="secondary"
+            variant="primary"
             onClick={authClick}
           >
             START PLAYING

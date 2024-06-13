@@ -5,7 +5,6 @@ import GameCard from '../components/GameCard/GameCard';
 import { gamesData } from '../gameData/gamesData';
 import { useRouter } from 'next/navigation';
 
-
 export default function Home() {
   const router = useRouter();
   const playClick = (path: any) => router.push(`/games/${path}`);
@@ -22,15 +21,7 @@ export default function Home() {
             description={game.shortDescription}
             tagLabel={game.category}
             tagPrice={game.price}
-            tagVariant={
-              game.category === 'arcade'
-                ? 'primary'
-                : game.category === 'mini-game'
-                ? 'secondary'
-                : game.category === 'degen'
-                ? 'tertiary'
-                : 'quaternary'
-            }
+            tagVariant="secondary"
           />
         ))}
       </div>

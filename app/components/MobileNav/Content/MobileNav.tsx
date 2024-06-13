@@ -68,7 +68,7 @@ const MobileNav = ({ onClick }: Props) => {
             href={button.href}
             size={button.size}
             color={`${
-              currentPath.startsWith(button.href) ? '#0A0B10' : '#85868B'
+              currentPath.startsWith(button.href) ? '#FF5756' : '#85868B'
             }`}
             weight={`${
               currentPath.startsWith(button.href) ? 'fill' : 'regular'

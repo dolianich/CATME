@@ -74,7 +74,7 @@ const GameCard = ({
             onClick={addToFavorites}
           />
         </div>
-        <Button title="PLAY" variant="tertiary" onClick={onClick}>
+        <Button title="PLAY" variant="primary" onClick={onClick}>
           PLAY
         </Button>
       </div>
