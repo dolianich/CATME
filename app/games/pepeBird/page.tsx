@@ -4,16 +4,16 @@ import { Unity, useUnityContext } from 'react-unity-webgl';
 import styles from './page.module.css';
 import Button from '@/app/components/Button/Button';
 
-const FlappyBirdPage = () => {
+const PepeBirdPage = () => {
   const { unityProvider, requestFullscreen } = useUnityContext({
     loaderUrl:
-      'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/FlappyBirdBuild.loader-vECeUyE7LVgt6jcR0w6I5q1cl6j0pw.js',
+      'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/FlappyBirdBuild.loader-rSRWndPSfwsK3MOAGJ3x5kuGNqBBrc.js',
     dataUrl:
-      'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/FlappyBirdBuild-reXTCaNTKyn6u2sHFe8Y1rGfnFAPcb.data',
+      'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/FlappyBirdBuild-chKfFJrdzUMRGCoYjApOjJRfsRUt3D.data',
     frameworkUrl:
-      'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/FlappyBirdBuild.framework-KzXdVg8FDaImySM5v1nHXK9jmbJkg0.js',
+      'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/FlappyBirdBuild.framework-GixNTSOgYRS19dvrVyRpAtEHXCMv7i.js',
     codeUrl:
-      'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/FlappyBirdBuild-QXTaU1Vtvez24aBAK3ka1UaFlMptYs.wasm',
+      'https://oghjaoh19pfhvinq.public.blob.vercel-storage.com/FlappyBirdBuild-MfUod5AT38J909gusShHuaW7IR18DB.wasm',
   });
 
   function handleClickEnterFullscreen() {
@@ -34,4 +34,4 @@ const FlappyBirdPage = () => {
   );
 };
 
-export default FlappyBirdPage;
+export default PepeBirdPage;

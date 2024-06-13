@@ -94,17 +94,17 @@ import SuperMarioCover from './SuperMarioBros/src/SuperMarioCover.png';
     },
     {
       id: '7',
-      title: 'Flappy Bird',
+      title: 'Pepe Bird',
       category: 'arcade',
       cover: FlappyBirdCover,
       price: 'free',
-      shortDescription: 'Click to fly!',
+      shortDescription: 'Flappy Bird but with Pepe',
       developer: '',
       releaseDate: '',
       fullDescription: '',
       gameBuild: '',
       status: '',
-      path: '/flappyBird'
+      path: '/pepeBird'
     },
     {
       id: '8',
