@@ -2,26 +2,14 @@
 import React from 'react';
 import SearchInput from '../SearchInput/SearchInput';
 import styles from './TopBar.module.css';
-import Button from '../Button/Button';
-import Avatar from '../Avatar/Avatar';
 import { useState } from 'react';
 import Logo from '../Logo/Logo';
 import { useRef } from 'react';
 import Window from '../MobileNav/Window/Window';
 import MobileNav from '../MobileNav/Content/MobileNav';
+import Auth from '../Auth/Auth';
 
 const TopBar = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const authClick = () => {
-    setIsAuthenticated(!isAuthenticated);
-    console.log('Auth button was clicked');
-  };
-
-  const avatarClick = () => {
-    setIsAuthenticated(!isAuthenticated);
-    console.log('Avatar was clicked; Logged out');
-  };
-
   const handleSearchChange = (value: string) => {
     console.log('Search term:', value);
   };
@@ -62,17 +50,7 @@ const TopBar = () => {
             {menuContent}
           </Window>
         </div>
-        {isAuthenticated ? (
-          <Avatar type="default" onClick={avatarClick} />
-        ) : (
-          <Button
-            title={'LOGIN'}
-            variant="outlined"
-            onClick={authClick}
-          >
-            LOGIN
-          </Button>
-        )}
+        <Auth />
       </div>
     </div>
   );
