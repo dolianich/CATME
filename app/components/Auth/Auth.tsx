@@ -12,6 +12,7 @@ import { EthereumPrivateKeyProvider } from '@web3auth/ethereum-provider';
 import { useState } from 'react';
 import Avatar from '../Avatar/Avatar';
 import Button from '../Button/Button';
+import styles from './Auth.module.css';
 
 const Auth = () => {
   const [smartAccount, setSmartAccount] =
@@ -86,7 +87,8 @@ const Auth = () => {
   return (
     <div>
       {loggedIn ? (
-        <Avatar type="default" /*onClick={avatarClick}*/ />
+        /*<Avatar type="default" onClick={avatarClick}/>*/
+        <p className={styles.address}>{smartAccountAddress}</p>
       ) : (
         <Button title={'LOGIN'} variant="outlined" onClick={connect}>
           SIGN IN
