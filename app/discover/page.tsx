@@ -4,12 +4,14 @@ import Heading from '../components/Heading/Heading';
 import GameCard from '../components/GameCard/GameCard';
 import { gamesData } from '../gameData/gamesData';
 import { useRouter } from 'next/navigation';
+import HeroBanner from '../components/HeroBanner/HeroBanner';
 
 export default function Home() {
   const router = useRouter();
   const playClick = (path: any) => router.push(`/games/${path}`);
   return (
     <div>
+      <HeroBanner />
       <Heading>Recommended Games</Heading>
       <div className={styles.cardsSection}>
         {gamesData.slice(0, 3).map((game) => (
