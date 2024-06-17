@@ -1,3 +1,8 @@
+.animation{
+    width: 300px;
+    height: 300px;
+}
+
 .contentContainer{
     display: flex;
     flex-direction: row;
@@ -49,4 +54,34 @@
 .wrapper:hover{
     transition: all ease-in-out 0.2s;
     background-color: #A257FF;
+}
+
+@media(max-width: 1050px){
+    .contentContainer{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .textContainer{
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .textContainer h1{
+        text-align: center;
+    }
+    .textContainer p{
+        text-align: center;
+    }
+}
+
+@media(max-width: 670px){
+    .animation{
+        width: 250px;
+        height: 250px;
+    }
+    .textContainer h1{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        
+    }
 }

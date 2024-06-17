@@ -8,12 +8,7 @@ const HeroBanner = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.contentContainer}>
-        <Player
-          autoplay
-          loop
-          src={spaceCatAnim}
-          style={{ height: '300px', width: '300px' }}
-        >
+        <Player autoplay loop src={spaceCatAnim} className={styles.animation}>
           <Controls
             visible={false}
             buttons={['play', 'repeat', 'frame', 'debug']}
