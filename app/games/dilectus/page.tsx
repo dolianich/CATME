@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Heading from '@/app/components/Heading/Heading';
 import styles from './page.module.css';
@@ -12,25 +13,38 @@ const Dilectus = () => {
   const [selectedStyle, setSelectedStyle] = useState(null);
 
   const selectAccessoriesButton = (event: any) => {
-    const selection = event.target.innerText;
+    const selection = event.target.id;
     setSelectedAccessory(selection);
   };
 
-  const selectedStylesButton = (name: any) => {
+  const setStyle = () => {
+    if (selectedAccessory === null) {
+      return null;
+    }
+    switch (selectedAccessory) {
+      case 'body':
+        return body;
+    }
+  };
+
+  const selectStylesButton = (name: any) => {
+    if (selectedAccessory === null) {
+      return null;
+    }
     setSelectedStyle(name);
     switch (selectedAccessory) {
-      case 'Body':
+      case 'body':
         switch (name) {
-          case 'Red':
+          case 'red':
             return setBodyIndex(0);
-          case 'Green':
+          case 'green':
             return setBodyIndex(1);
-          case 'Yellow':
+          case 'yellow':
             return setBodyIndex(2);
-          case 'Blue':
+          case 'blue':
             return setBodyIndex(3);
           default:
-            return setBodyIndex(0);
+            return setBodyIndex(3);
         }
     }
   };
@@ -38,6 +52,22 @@ const Dilectus = () => {
   return (
     <div className={styles.wrap}>
       <Heading>DILECTUS</Heading>
+      <div>
+        <Body img={body[bodyIndex].img}></Body>
+        <button id='body'
+          onClick={(e) => {
+            setStyle();
+            selectAccessoriesButton(e);
+          }}
+        >
+          Body
+        </button>
+
+        <button onClick={() => selectStylesButton('red')}>red</button>
+        <button onClick={() => selectStylesButton('green')}>green</button>
+        <button onClick={() => selectStylesButton('yellow')}>yellow</button>
+        <button onClick={() => selectStylesButton('blue')}>blue</button>
+      </div>
     </div>
   );
 };
