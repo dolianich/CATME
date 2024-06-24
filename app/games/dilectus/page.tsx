@@ -3,12 +3,14 @@ import React from 'react';
 import Heading from '@/app/components/Heading/Heading';
 import styles from './page.module.css';
 import Body from './components/Body/Body';
-import { body } from './data/assets';
+import Background from './components/Background/Background';
+import { body, background } from './data/assets';
 import { useState } from 'react';
 
 const Dilectus = () => {
+  const [backgroundIndex, setBackgroundIndex] = useState(0);
   const [bodyIndex, setBodyIndex] = useState(0);
-  const [selectedAccessory, setSelectedAccessory] = useState(null);
+  const [selectedAccessory, setSelectedAccessory] = useState('body');
   const [selectedStyle, setSelectedStyle] = useState(null);
 
   const selectAccessoriesButton = (event: any) => {
@@ -23,6 +25,8 @@ const Dilectus = () => {
     switch (selectedAccessory) {
       case 'body':
         return body;
+      case 'background':
+        return background;
     }
   };
 
@@ -45,36 +49,55 @@ const Dilectus = () => {
           default:
             return setBodyIndex(3);
         }
+      case 'background':
+        switch (name) {
+          case 'dark blue':
+            return setBackgroundIndex(0);
+          case 'dark green':
+            return setBackgroundIndex(1);
+          default:
+            return setBackgroundIndex(0);
+        }
     }
   };
 
   return (
     <div className={styles.wrap}>
       <div className={styles.dilectus}>
+        <Background img={background[backgroundIndex].img}></Background>
         <Body img={body[bodyIndex].img}></Body>
       </div>
 
       <div className={styles.edit}>
-      <div className={styles.style}>
-        <button
-          id="body"
-          onClick={(e) => {
-            setStyle();
-            selectAccessoriesButton(e);
-          }}
-        >
-          Body
-        </button>
-      </div>
+        <div className={styles.style}>
+          <button
+            id="body"
+            onClick={(e) => {
+              setStyle();
+              selectAccessoriesButton(e);
+            }}
+          >
+            Body
+          </button>
+          <button
+            id="background"
+            onClick={(e) => {
+              setStyle();
+              selectAccessoriesButton(e);
+            }}
+          >
+            background
+          </button>
+        </div>
 
-      <div className={styles.accessory}>
-        {setStyle() &&
-          setStyle()?.map((item, index) => (
-            <button key={index} onClick={() => selectStylesButton(item.name)}>
-              {item.name}
-            </button>
-          ))}
-      </div>
+        <div className={styles.accessory}>
+          {setStyle() &&
+            setStyle()?.map((item, index) => (
+              <button key={index} onClick={() => selectStylesButton(item.name)}>
+                {item.name}
+              </button>
+            ))}
+        </div>
       </div>
     </div>
   );
