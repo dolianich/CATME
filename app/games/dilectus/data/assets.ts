@@ -6,6 +6,7 @@ import darkBlue from './src/background/darkBlue.png';
 import darkGreen from './src/background/darkGreen.png'; 
 import forest from './src/background/forest.svg';
 import mountains from './src/background/mountains.svg';
+import desert from './src/background/desert.svg';
 
 export const body = [
     {img: red, name: 'red'},
@@ -15,8 +16,7 @@ export const body = [
 ];
 
 export const background = [
-    {img: darkBlue, name: 'dark blue'},
-    {img: darkGreen, name: 'dark green'},
     {img: forest, name: 'forest'},
-    {img: mountains, name: 'mountains'}
+    {img: mountains, name: 'mountains'},
+    {img: desert, name: 'desert'}
 ];
