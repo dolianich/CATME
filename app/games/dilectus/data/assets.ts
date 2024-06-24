@@ -8,4 +8,8 @@ export const body = [
     {img: green, name: 'green'},
     {img: yellow, name: 'yellow'},
     {img: blue, name: 'blue'}
+];
+
+export const background = [
+    {}
 ]

@@ -2,7 +2,6 @@
 import React from 'react';
 import Heading from '@/app/components/Heading/Heading';
 import styles from './page.module.css';
-import Button from '@/app/components/Button/Button';
 import Body from './components/Body/Body';
 import { body } from './data/assets';
 import { useState } from 'react';
@@ -54,7 +53,8 @@ const Dilectus = () => {
       <Heading>DILECTUS</Heading>
       <div>
         <Body img={body[bodyIndex].img}></Body>
-        <button id='body'
+        <button
+          id="body"
           onClick={(e) => {
             setStyle();
             selectAccessoriesButton(e);
@@ -63,10 +63,12 @@ const Dilectus = () => {
           Body
         </button>
 
-        <button onClick={() => selectStylesButton('red')}>red</button>
-        <button onClick={() => selectStylesButton('green')}>green</button>
-        <button onClick={() => selectStylesButton('yellow')}>yellow</button>
-        <button onClick={() => selectStylesButton('blue')}>blue</button>
+        {setStyle() &&
+          setStyle()?.map((item, index) => (
+            <button key={index} onClick={() => selectStylesButton(item.name)}>
+              {item.name}
+            </button>
+          ))}
       </div>
     </div>
   );
