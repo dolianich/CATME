@@ -55,6 +55,10 @@ const Dilectus = () => {
             return setBackgroundIndex(0);
           case 'dark green':
             return setBackgroundIndex(1);
+          case 'forest':
+            return setBackgroundIndex(2);
+          case 'mountains':
+            return setBackgroundIndex(3);
           default:
             return setBackgroundIndex(0);
         }

@@ -11,8 +11,8 @@ const Body = ({ img }: Props) => {
     <Image
       src={img}
       alt="body"
-      width={350}
-      height={350}
+      width={300}
+      height={300}
       className={styles.absolute}
     />
   );

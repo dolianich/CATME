@@ -7,7 +7,7 @@ interface Props {
 }
 
 const Background = ({ img }: Props) => {
-  return <Image src={img} alt="body" width={350} height={350} className={styles.absolute}/>;
+  return <Image src={img} alt="background" width={350} height={350} className={styles.absolute}/>;
 };
 
 export default Background;
