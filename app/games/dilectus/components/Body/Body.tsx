@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Body = ({ img }: Props) => {
-  return <Image src={img} alt="body" width={200} height={200} />;
+  return <Image src={img} alt="body" width={350} height={350} />;
 };
 
 export default Body;

@@ -50,9 +50,12 @@ const Dilectus = () => {
 
   return (
     <div className={styles.wrap}>
-      <Heading>DILECTUS</Heading>
-      <div>
+      <div className={styles.dilectus}>
         <Body img={body[bodyIndex].img}></Body>
+      </div>
+
+      <div className={styles.edit}>
+      <div className={styles.style}>
         <button
           id="body"
           onClick={(e) => {
@@ -62,13 +65,16 @@ const Dilectus = () => {
         >
           Body
         </button>
+      </div>
 
+      <div className={styles.accessory}>
         {setStyle() &&
           setStyle()?.map((item, index) => (
             <button key={index} onClick={() => selectStylesButton(item.name)}>
               {item.name}
             </button>
           ))}
+      </div>
       </div>
     </div>
   );
