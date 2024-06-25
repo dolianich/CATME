@@ -4,12 +4,14 @@ import Heading from '@/app/components/Heading/Heading';
 import styles from './page.module.css';
 import Body from './components/Body/Body';
 import Background from './components/Background/Background';
-import { body, background } from './data/assets';
+import Eyes from './components/Eyes/Eyes';
+import { body, background, eyes } from './data/assets';
 import { useState } from 'react';
 
 const Dilectus = () => {
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const [bodyIndex, setBodyIndex] = useState(0);
+  const [eyesIndex, setEyesIndex] = useState(0);
   const [selectedAccessory, setSelectedAccessory] = useState('body');
   const [selectedStyle, setSelectedStyle] = useState(null);
 
@@ -27,6 +29,8 @@ const Dilectus = () => {
         return body;
       case 'background':
         return background;
+      case 'eyes':
+        return eyes;
     }
   };
 
@@ -38,16 +42,10 @@ const Dilectus = () => {
     switch (selectedAccessory) {
       case 'body':
         switch (name) {
-          case 'red':
-            return setBodyIndex(0);
-          case 'green':
-            return setBodyIndex(1);
-          case 'yellow':
-            return setBodyIndex(2);
           case 'blue':
-            return setBodyIndex(3);
+            return setBodyIndex(0);
           default:
-            return setBodyIndex(3);
+            return setBodyIndex(0);
         }
       case 'background':
         switch (name) {
@@ -60,6 +58,13 @@ const Dilectus = () => {
           default:
             return setBackgroundIndex(0);
         }
+      case 'eyes':
+        switch (name) {
+          case 'normal':
+            return setBackgroundIndex(0);
+          default:
+            return setBackgroundIndex(0);
+        }
     }
   };
 
@@ -67,7 +72,8 @@ const Dilectus = () => {
     <div className={styles.wrap}>
       <div className={styles.dilectus}>
         <Background img={background[backgroundIndex].img}></Background>
-        <Body img={body[bodyIndex].img}></Body>
+        <Body img={body[bodyIndex].anim}></Body>
+        <Eyes img={eyes[eyesIndex].anim} />
       </div>
 
       <div className={styles.edit}>
