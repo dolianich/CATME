@@ -15,6 +15,17 @@ import Logo from '../Logo/Logo';
 import Banner from './Banner/Banner';
 
 const SideBar = () => {
+
+  const currentPath = usePathname();
+
+  return (
+    <>
+    {currentPath.includes('dilectus') ? <></> : <SideBarContent />}
+    </>
+);
+};
+
+const SideBarContent = () => {
   const currentPath = usePathname();
   const navButtons = [
     {
