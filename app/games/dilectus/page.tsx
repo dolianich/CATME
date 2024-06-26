@@ -4,7 +4,8 @@ import styles from './page.module.css';
 import Body from './components/Body/Body';
 import Background from './components/Background/Background';
 import Eyes from './components/Eyes/Eyes';
-import { body, background, eyes } from './data/assets';
+import Fren from './components/Fren/Fren';
+import { body, background, eyes, fren } from './data/assets';
 import { useState } from 'react';
 
 const Dilectus = () => {
@@ -12,6 +13,7 @@ const Dilectus = () => {
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const [bodyIndex, setBodyIndex] = useState(0);
   const [eyesIndex, setEyesIndex] = useState(0);
+  const [frenIndex, setFrenIndex] = useState(0);
   const [selectedAccessory, setSelectedAccessory] = useState('body');
   const [selectedStyle, setSelectedStyle] = useState(null);
 
@@ -35,6 +37,8 @@ const Dilectus = () => {
         return background;
       case 'eyes':
         return eyes;
+      case 'fren':
+        return fren;
     }
   };
 
@@ -76,6 +80,13 @@ const Dilectus = () => {
           default:
             return setEyesIndex(0);
         }
+      case 'fren':
+        switch (name) {
+          case 'shroom':
+            return setFrenIndex(0);
+          default:
+            return setFrenIndex(0);
+        }
     }
   };
 
@@ -83,6 +94,7 @@ const Dilectus = () => {
     <div className={styles.wrap}>
       <div className={styles.dilectus}>
         <Background img={background[backgroundIndex].img}></Background>
+        <Fren img={fren[frenIndex].anim}></Fren>
         {isReload && <Body img={body[bodyIndex].anim}></Body>}
         {!isReload && <Body img={body[bodyIndex].anim}></Body>}
         {isReload && <Eyes img={eyes[eyesIndex].anim} />}

@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from './Body.module.css';
+import styles from './Fren.module.css';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 
 interface Props {
   img: string | object;
 }
 
-const Body = ({ img }: Props) => {
+const Fren = ({ img }: Props) => {
   return (
     <div className={styles.absolute}>
       <Player autoplay loop src={img}>
@@ -19,4 +19,4 @@ const Body = ({ img }: Props) => {
   );
 };
 
-export default Body;
+export default Fren;
