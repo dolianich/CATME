@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Heading from '@/app/components/Heading/Heading';
 import styles from './page.module.css';
 import Body from './components/Body/Body';
 import Background from './components/Background/Background';
@@ -9,11 +8,16 @@ import { body, background, eyes } from './data/assets';
 import { useState } from 'react';
 
 const Dilectus = () => {
+  const [isReload, setIsReload] = useState(true);
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const [bodyIndex, setBodyIndex] = useState(0);
   const [eyesIndex, setEyesIndex] = useState(0);
   const [selectedAccessory, setSelectedAccessory] = useState('body');
   const [selectedStyle, setSelectedStyle] = useState(null);
+
+  const reload = () => {
+    setIsReload(!isReload);
+  };
 
   const selectAccessoriesButton = (event: any) => {
     const selection = event.target.id;
@@ -35,15 +39,20 @@ const Dilectus = () => {
   };
 
   const selectStylesButton = (name: any) => {
-    if (selectedAccessory === null) {
-      return null;
-    }
     setSelectedStyle(name);
     switch (selectedAccessory) {
       case 'body':
         switch (name) {
           case 'blue':
             return setBodyIndex(0);
+          case 'red':
+            return setBodyIndex(1);
+          case 'green':
+            return setBodyIndex(2);
+          case 'purple':
+            return setBodyIndex(3);
+          case 'yellow':
+            return setBodyIndex(4);
           default:
             return setBodyIndex(0);
         }
@@ -61,9 +70,11 @@ const Dilectus = () => {
       case 'eyes':
         switch (name) {
           case 'normal':
-            return setBackgroundIndex(0);
+            return setEyesIndex(0);
+          case 'test':
+            return setEyesIndex(1);
           default:
-            return setBackgroundIndex(0);
+            return setEyesIndex(0);
         }
     }
   };
@@ -72,8 +83,10 @@ const Dilectus = () => {
     <div className={styles.wrap}>
       <div className={styles.dilectus}>
         <Background img={background[backgroundIndex].img}></Background>
-        <Body img={body[bodyIndex].anim}></Body>
-        <Eyes img={eyes[eyesIndex].anim} />
+        {isReload && <Body img={body[bodyIndex].anim}></Body>}
+        {!isReload && <Body img={body[bodyIndex].anim}></Body>}
+        {isReload && <Eyes img={eyes[eyesIndex].anim} />}
+        {!isReload && <Eyes img={eyes[eyesIndex].anim} />}
       </div>
 
       <div className={styles.edit}>
@@ -96,12 +109,28 @@ const Dilectus = () => {
           >
             background
           </button>
+
+          <button
+            id="eyes"
+            onClick={(e) => {
+              setStyle();
+              selectAccessoriesButton(e);
+            }}
+          >
+            eyes
+          </button>
         </div>
 
         <div className={styles.accessory}>
           {setStyle() &&
             setStyle()?.map((item, index) => (
-              <button key={index} onClick={() => selectStylesButton(item.name)}>
+              <button
+                key={index}
+                onClick={() => {
+                  selectStylesButton(item.name);
+                  reload();
+                }}
+              >
                 {item.name}
               </button>
             ))}
