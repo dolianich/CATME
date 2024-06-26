@@ -7,7 +7,7 @@ import forest from './src/background/forest.svg';
 import mountains from './src/background/mountains.svg';
 import desert from './src/background/desert.svg';
 import normal from './src/eyes/normal.json';
-import test from './src/eyes/test.json';
+import angry from './src/eyes/angry.json';
 
 export const body = [
     {anim: blue, name: 'blue'},
@@ -25,5 +25,5 @@ export const background = [
 
 export const eyes = [
     {anim: normal, name: 'normal'},
-    {anim: test, name: 'test'}
+    {anim: angry, name: 'angry'}
 ]

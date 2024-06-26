@@ -71,7 +71,7 @@ const Dilectus = () => {
         switch (name) {
           case 'normal':
             return setEyesIndex(0);
-          case 'test':
+          case 'angry':
             return setEyesIndex(1);
           default:
             return setEyesIndex(0);
