@@ -3,13 +3,12 @@ import styles from './ItemButton.module.css';
 
 interface Props {
   onClick: () => void;
-  key?: React.Key;
   children: React.ReactNode;
 }
 
-const ItemButton = ({ onClick, key, children }: Props) => {
+const ItemButton = ({ onClick, children }: Props) => {
   return (
-    <button onClick={onClick} key={key} className={styles.button}>
+    <button onClick={onClick} className={styles.button}>
       {children}
     </button>
   );
