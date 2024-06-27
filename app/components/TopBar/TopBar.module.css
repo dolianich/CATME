@@ -10,6 +10,10 @@
     background-color: #0A0B10;
 }
 
+.removed{
+    display: none;
+}
+
 .firstSection{
     display: flex;
     flex-direction: row;

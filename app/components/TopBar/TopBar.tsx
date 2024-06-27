@@ -8,8 +8,11 @@ import { useRef } from 'react';
 import Window from '../MobileNav/Window/Window';
 import MobileNav from '../MobileNav/Content/MobileNav';
 import Auth from '../Auth/Auth';
+import { usePathname } from 'next/navigation';
 
 const TopBar = () => {
+  const currentPath = usePathname();
+
   const handleSearchChange = (value: string) => {
     console.log('Search term:', value);
   };
@@ -32,7 +35,13 @@ const TopBar = () => {
   };
 
   return (
-    <div className={styles.topBarContainer}>
+    <div
+      className={
+        currentPath.includes('dilectus')
+          ? styles.removed
+          : styles.topBarContainer
+      }
+    >
       <SearchInput
         placeholder="Search..."
         onChange={handleSearchChange}

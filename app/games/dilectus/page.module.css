@@ -1,7 +1,11 @@
 .wrap{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 242px;
     gap: 18px;
+    height: 100dvh;
 }
 
 .dilectus{
