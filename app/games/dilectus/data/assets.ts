@@ -9,6 +9,7 @@ import desert from './src/background/desert.svg';
 import normal from './src/eyes/normal.json';
 import angry from './src/eyes/angry.json';
 import shroom from './src/frens/shroom.json';
+import snail from './src/frens/snail.json';
 
 export const body = [
     {anim: blue, name: 'blue'},
@@ -30,5 +31,6 @@ export const eyes = [
 ];
 
 export const fren = [
-    {anim: shroom, name: 'shroom'}
+    {anim: shroom, name: 'shroom'},
+    {anim: snail, name: 'snail'}
 ]

@@ -84,6 +84,8 @@ const Dilectus = () => {
         switch (name) {
           case 'shroom':
             return setFrenIndex(0);
+          case 'snail':
+            return setFrenIndex(1);
           default:
             return setFrenIndex(0);
         }
@@ -130,6 +132,16 @@ const Dilectus = () => {
             }}
           >
             eyes
+          </button>
+
+          <button
+            id="fren"
+            onClick={(e) => {
+              setStyle();
+              selectAccessoriesButton(e);
+            }}
+          >
+            fren
           </button>
         </div>
 
