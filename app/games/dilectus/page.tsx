@@ -144,7 +144,7 @@ const Dilectus = () => {
               selectAccessoriesButton(e);
             }}
           >
-            fr
+            FR
           </CategoryButton>
         </div>
 
