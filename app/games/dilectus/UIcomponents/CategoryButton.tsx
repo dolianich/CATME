@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './categoryButton.module.css';
+import styles from './CategoryButton.module.css';
 
 interface Props {
   id: string;
