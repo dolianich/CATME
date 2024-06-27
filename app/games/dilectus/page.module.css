@@ -3,9 +3,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 242px;
+    margin-right: 12px;
+    margin-left: -230px;
     gap: 18px;
-    height: 100dvh;
+    height: 100%;
 }
 
 .dilectus{
@@ -49,4 +50,24 @@
     background-color: #1B1E23;
     padding: 18px;
     gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 870px) { 
+    .wrap{
+       flex-direction: column;
+    }
+    .style{
+        flex-direction: row;
+    }
+    .edit{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrap{
+        margin-left: 12px;
+    }
 }
