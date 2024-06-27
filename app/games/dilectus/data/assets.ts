@@ -17,20 +17,44 @@ export const body = [
     {anim: green, name: 'green'},
     {anim: purple, name: 'purple'},
     {anim: yellow, name: 'yellow'},
+    {anim: yellow, name: 'yellow'},
+    {anim: yellow, name: 'yellow'},
+    {anim: yellow, name: 'yellow'},
+    {anim: yellow, name: 'yellow'},
 ];
 
 export const background = [
     {img: forest, name: 'forest'},
     {img: mountains, name: 'mountains'},
-    {img: desert, name: 'desert'}
+    {img: desert, name: 'desert'},
+    {img: desert, name: 'desert'},
+    {img: desert, name: 'desert'},
+    {img: desert, name: 'desert'},
+    {img: desert, name: 'desert'},
+    {img: desert, name: 'desert'},
+    {img: desert, name: 'desert'},
 ];
 
 export const eyes = [
     {anim: normal, name: 'normal'},
+    {anim: angry, name: 'angry'},
+    {anim: angry, name: 'angry'},
+    {anim: angry, name: 'angry'},
+    {anim: angry, name: 'angry'},
+    {anim: angry, name: 'angry'},
+    {anim: angry, name: 'angry'},
+    {anim: angry, name: 'angry'},
     {anim: angry, name: 'angry'}
 ];
 
 export const fren = [
     {anim: shroom, name: 'shroom'},
+    {anim: snail, name: 'snail'},
+    {anim: snail, name: 'snail'},
+    {anim: snail, name: 'snail'},
+    {anim: snail, name: 'snail'},
+    {anim: snail, name: 'snail'},
+    {anim: snail, name: 'snail'},
+    {anim: snail, name: 'snail'},
     {anim: snail, name: 'snail'}
 ]
