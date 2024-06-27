@@ -7,6 +7,8 @@ import Eyes from './components/Eyes/Eyes';
 import Fren from './components/Fren/Fren';
 import { body, background, eyes, fren } from './data/assets';
 import { useState } from 'react';
+import CategoryButton from './UIcomponents/CategoryButton';
+import ItemButton from './UIcomponents/ItemButton/ItemButton';
 
 const Dilectus = () => {
   const [isReload, setIsReload] = useState(true);
@@ -105,50 +107,51 @@ const Dilectus = () => {
 
       <div className={styles.edit}>
         <div className={styles.style}>
-          <button
+          <CategoryButton
             id="body"
             onClick={(e) => {
               setStyle();
               selectAccessoriesButton(e);
             }}
           >
-            Body
-          </button>
-          <button
+            BD
+          </CategoryButton>
+
+          <CategoryButton
             id="background"
             onClick={(e) => {
               setStyle();
               selectAccessoriesButton(e);
             }}
           >
-            background
-          </button>
+            BG
+          </CategoryButton>
 
-          <button
+          <CategoryButton
             id="eyes"
             onClick={(e) => {
               setStyle();
               selectAccessoriesButton(e);
             }}
           >
-            eyes
-          </button>
+            EY
+          </CategoryButton>
 
-          <button
+          <CategoryButton
             id="fren"
             onClick={(e) => {
               setStyle();
               selectAccessoriesButton(e);
             }}
           >
-            fren
-          </button>
+            FR
+          </CategoryButton>
         </div>
 
         <div className={styles.accessory}>
           {setStyle() &&
             setStyle()?.map((item, index) => (
-              <button
+              <ItemButton
                 key={index}
                 onClick={() => {
                   selectStylesButton(item.name);
@@ -156,7 +159,7 @@ const Dilectus = () => {
                 }}
               >
                 {item.name}
-              </button>
+              </ItemButton>
             ))}
         </div>
       </div>

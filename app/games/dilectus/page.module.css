@@ -1,14 +1,14 @@
 .wrap{
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: 18px;
 }
 
 .dilectus{
-    width: 492px;
-    height: 492px;
-    padding: 8px;
-    border-radius: 32px;
+    width: 314px;
+    height: 314px;
+    padding: 18px;
+    border-radius: 48px;
     background-color: #1B1E23;
     display: flex;
     align-items: center;
@@ -19,25 +19,30 @@
 
 .style{
     display: flex;
-    flex-direction: row;
-    gap: 8px;
-    padding: 8px;
-    border-radius: 32px;
+    flex-direction: column;
+    gap: 14px;
+    border-radius: 48px;
     background-color: #1B1E23;
+    align-items: center;
+    justify-content: center;
 }
 
 .accessory{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 18px;
     border-radius: 32px;
-    padding: 8px;
     background-color: #1B1E23;
+    width: 306px;
 }
+
 
 .edit{
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    flex-direction: row;
+    border-radius: 48px;
+    background-color: #1B1E23;
+    padding: 18px;
+    gap: 18px;
 }
