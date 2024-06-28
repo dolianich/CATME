@@ -2,4 +2,16 @@
     width: 90px;
     height: 90px;
     border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: #F0F1FF;
+}
+
+.image{
+    width: 84px;
+    height: 84px;
+    border-radius: 27px;
 }

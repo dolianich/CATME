@@ -10,51 +10,52 @@ import normal from './src/eyes/normal.json';
 import angry from './src/eyes/angry.json';
 import shroom from './src/frens/shroom.json';
 import snail from './src/frens/snail.json';
+import grey from './src/general/grey.svg';
 
 export const body = [
-    {anim: blue, name: 'blue'},
-    {anim: red, name: 'red'},
-    {anim: green, name: 'green'},
-    {anim: purple, name: 'purple'},
-    {anim: yellow, name: 'yellow'},
-    {anim: yellow, name: 'yellow'},
-    {anim: yellow, name: 'yellow'},
-    {anim: yellow, name: 'yellow'},
-    {anim: yellow, name: 'yellow'},
+    {anim: blue, name: 'blue', button: forest},
+    {anim: red, name: 'red', button: forest},
+    {anim: green, name: 'green', button: forest},
+    {anim: purple, name: 'purple', button: forest},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey},
 ];
 
 export const background = [
-    {img: forest, name: 'forest'},
-    {img: mountains, name: 'mountains'},
-    {img: desert, name: 'desert'},
-    {img: desert, name: 'desert'},
-    {img: desert, name: 'desert'},
-    {img: desert, name: 'desert'},
-    {img: desert, name: 'desert'},
-    {img: desert, name: 'desert'},
-    {img: desert, name: 'desert'},
+    {img: forest, name: 'forest', button: forest},
+    {img: mountains, name: 'mountains', button: mountains},
+    {img: desert, name: 'desert', button: desert},
+    {img: 'none', name: 'none', button: grey},
+    {img: 'none', name: 'none', button: grey},
+    {img: 'none', name: 'none', button: grey},
+    {img: 'none', name: 'none', button: grey},
+    {img: 'none', name: 'none', button: grey},
+    {img: 'none', name: 'none', button: grey},
 ];
 
 export const eyes = [
-    {anim: normal, name: 'normal'},
-    {anim: angry, name: 'angry'},
-    {anim: angry, name: 'angry'},
-    {anim: angry, name: 'angry'},
-    {anim: angry, name: 'angry'},
-    {anim: angry, name: 'angry'},
-    {anim: angry, name: 'angry'},
-    {anim: angry, name: 'angry'},
-    {anim: angry, name: 'angry'}
+    {anim: normal, name: 'normal', button: forest},
+    {anim: angry, name: 'angry', button: forest},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey}
 ];
 
 export const fren = [
-    {anim: shroom, name: 'shroom'},
-    {anim: snail, name: 'snail'},
-    {anim: snail, name: 'snail'},
-    {anim: snail, name: 'snail'},
-    {anim: snail, name: 'snail'},
-    {anim: snail, name: 'snail'},
-    {anim: snail, name: 'snail'},
-    {anim: snail, name: 'snail'},
-    {anim: snail, name: 'snail'}
+    {anim: shroom, name: 'shroom', button: forest},
+    {anim: snail, name: 'snail', button: forest},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey},
+    {anim: 'none', name: 'none', button: grey}
 ]

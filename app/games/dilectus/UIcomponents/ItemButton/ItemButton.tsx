@@ -1,15 +1,17 @@
 import React from 'react';
 import styles from './ItemButton.module.css';
+import Image from 'next/image';
+import { StaticImageData } from 'next/image';
 
 interface Props {
   onClick: () => void;
-  children: React.ReactNode;
+  img: StaticImageData;
 }
 
-const ItemButton = ({ onClick, children }: Props) => {
+const ItemButton = ({ onClick, img }: Props) => {
   return (
     <button onClick={onClick} className={styles.button}>
-      {children}
+      <Image src={img} alt={'img'} className={styles.image} />
     </button>
   );
 };

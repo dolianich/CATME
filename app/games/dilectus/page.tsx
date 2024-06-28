@@ -152,14 +152,13 @@ const Dilectus = () => {
           {setStyle() &&
             setStyle()?.map((item, index) => (
               <ItemButton
+                img={item.button}
                 key={index}
                 onClick={() => {
                   selectStylesButton(item.name);
                   reload();
                 }}
-              >
-                {item.name}
-              </ItemButton>
+              />
             ))}
         </div>
       </div>
