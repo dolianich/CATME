@@ -155,6 +155,15 @@ const Dilectus = () => {
                 <div key={index} className={styles.empty}></div>
               ) : (
                 <ItemButton
+                  type={
+                    (selectedAccessory === 'body' && item.id === bodyIndex) ||
+                    (selectedAccessory === 'background' &&
+                      item.id === backgroundIndex) ||
+                    (selectedAccessory === 'eyes' && item.id === eyesIndex) ||
+                    (selectedAccessory === 'fren' && item.id === frenIndex)
+                      ? 'selected'
+                      : 'default'
+                  }
                   img={item.button}
                   key={index}
                   onClick={() => {

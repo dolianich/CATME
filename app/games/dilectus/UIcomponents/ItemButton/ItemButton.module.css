@@ -1,4 +1,4 @@
-.button{
+.selected{
     width: 90px;
     height: 90px;
     border-radius: 30px;
@@ -8,6 +8,33 @@
     cursor: pointer;
     border: none;
     background-color: #F0F1FF;
+}
+
+.default{
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: #24282F;
+    opacity: 80%;
+}
+
+
+.default:hover{
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: #24282F;
+    opacity: 100%;
 }
 
 .image{
