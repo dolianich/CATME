@@ -54,6 +54,13 @@
     align-items: center;
 }
 
+.empty{
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
+    background-color: #24282F;
+}
+
 @media (max-width: 870px) { 
     .wrap{
        flex-direction: column;

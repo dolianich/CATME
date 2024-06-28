@@ -150,16 +150,20 @@ const Dilectus = () => {
 
         <div className={styles.accessory}>
           {setStyle() &&
-            setStyle()?.map((item, index) => (
-              <ItemButton
-                img={item.button}
-                key={index}
-                onClick={() => {
-                  selectStylesButton(item.name);
-                  reload();
-                }}
-              />
-            ))}
+            setStyle()?.map((item, index) =>
+              item.name === 'none' ? (
+                <div key={index} className={styles.empty}></div>
+              ) : (
+                <ItemButton
+                  img={item.button}
+                  key={index}
+                  onClick={() => {
+                    selectStylesButton(item.name);
+                    reload();
+                  }}
+                />
+              )
+            )}
         </div>
       </div>
     </div>
