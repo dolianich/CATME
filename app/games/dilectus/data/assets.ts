@@ -11,13 +11,22 @@ import angry from './src/eyes/angry.json';
 import shroom from './src/frens/shroom.json';
 import snail from './src/frens/snail.json';
 import grey from './src/general/grey.svg';
+import eyesImg from './src/general/eyesImg.svg';
+import angryEyes from './src/general/angryEyes.svg';
+import blueBody from './src/general/blueBody.svg';
+import greenBody from './src/general/greenBody.svg';
+import purpleBody from './src/general/purpleBody.svg';
+import redBody from './src/general/redBody.svg';
+import yellowBody from './src/general/yellowBody.svg';
+import snailImg from './src/general/snailImg.svg';
+import shroomImg from './src/general/shroomImg.svg';
 
 export const body = [
-    {id: 0 ,anim: blue, name: 'blue', button: forest},
-    {id: 1, anim: red, name: 'red', button: forest},
-    {id: 2, anim: green, name: 'green', button: forest},
-    {id: 3, anim: purple, name: 'purple', button: forest},
-    {id: 4, anim: 'none', name: 'none', button: grey},
+    {id: 0 ,anim: blue, name: 'blue', button: blueBody},
+    {id: 1, anim: red, name: 'red', button: redBody},
+    {id: 2, anim: green, name: 'green', button: greenBody},
+    {id: 3, anim: purple, name: 'purple', button: purpleBody},
+    {id: 4, anim: yellow, name: 'yellow', button: yellowBody},
     {id: 5, anim: 'none', name: 'none', button: grey},
     {id: 6, anim: 'none', name: 'none', button: grey},
     {id: 7, anim: 'none', name: 'none', button: grey},
@@ -37,8 +46,8 @@ export const background = [
 ];
 
 export const eyes = [
-    {id: 0, anim: normal, name: 'normal', button: forest},
-    {id: 1, anim: angry, name: 'angry', button: forest},
+    {id: 0, anim: normal, name: 'normal', button: eyesImg},
+    {id: 1, anim: angry, name: 'angry', button: angryEyes},
     {id: 2, anim: 'none', name: 'none', button: grey},
     {id: 3, anim: 'none', name: 'none', button: grey},
     {id: 4, anim: 'none', name: 'none', button: grey},
@@ -49,8 +58,8 @@ export const eyes = [
 ];
 
 export const fren = [
-    {id: 0, anim: shroom, name: 'shroom', button: forest},
-    {id: 1, anim: snail, name: 'snail', button: forest},
+    {id: 0, anim: shroom, name: 'shroom', button: shroomImg},
+    {id: 1, anim: snail, name: 'snail', button: snailImg},
     {id: 2, anim: 'none', name: 'none', button: grey},
     {id: 3, anim: 'none', name: 'none', button: grey},
     {id: 4, anim: 'none', name: 'none', button: grey},
