@@ -20,6 +20,8 @@ import redBody from './src/general/redBody.svg';
 import yellowBody from './src/general/yellowBody.svg';
 import snailImg from './src/general/snailImg.svg';
 import shroomImg from './src/general/shroomImg.svg';
+import frogImg from './src/general/frogImg.svg';
+import frog from './src/frens/frog.json';
 
 export const body = [
     {id: 0 ,anim: blue, name: 'blue', button: blueBody},
@@ -60,7 +62,7 @@ export const eyes = [
 export const fren = [
     {id: 0, anim: shroom, name: 'shroom', button: shroomImg},
     {id: 1, anim: snail, name: 'snail', button: snailImg},
-    {id: 2, anim: 'none', name: 'none', button: grey},
+    {id: 2, anim: frog, name: 'frog', button: frogImg},
     {id: 3, anim: 'none', name: 'none', button: grey},
     {id: 4, anim: 'none', name: 'none', button: grey},
     {id: 5, anim: 'none', name: 'none', button: grey},
