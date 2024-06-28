@@ -8,6 +8,33 @@
     background-color: #24282F;
     border: none;
     cursor: pointer;
+    opacity: 50%;
+}
+
+.default:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68px;
+    height: 68px;
+    border-radius: 100px;
+    background-color: #24282F;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.selected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68px;
+    height: 68px;
+    border-radius: 100px;
+    background-color: #24282F;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
 }
 
 .image{

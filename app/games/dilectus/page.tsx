@@ -99,87 +99,94 @@ const Dilectus = () => {
   };
 
   return (
-    <div className={styles.wrap}>
-      <div className={styles.dilectus}>
-        <Background img={background[backgroundIndex].img}></Background>
-        <Fren img={fren[frenIndex].anim}></Fren>
-        {isReload && <Body img={body[bodyIndex].anim}></Body>}
-        {!isReload && <Body img={body[bodyIndex].anim}></Body>}
-        {isReload && <Eyes img={eyes[eyesIndex].anim} />}
-        {!isReload && <Eyes img={eyes[eyesIndex].anim} />}
-      </div>
-
-      <div className={styles.edit}>
-        <div className={styles.style}>
-          <CategoryButton
-            img={bodyIcon}
-            id="body"
-            imgId='body'
-            onClick={(e) => {
-              setStyle();
-              selectAccessoriesButton(e);
-            }}
-          ></CategoryButton>
-
-          <CategoryButton
-            img={bgIcon}
-            id="background"
-            imgId='background'
-            onClick={(e) => {
-              setStyle();
-              selectAccessoriesButton(e);
-            }}
-          ></CategoryButton>
-
-          <CategoryButton
-            img={eyesIcon}
-            id="eyes"
-            imgId='eyes'
-            onClick={(e) => {
-              setStyle();
-              selectAccessoriesButton(e);
-            }}
-          ></CategoryButton>
-
-          <CategoryButton
-            img={frenIcon}
-            id="fren"
-            imgId='fren'
-            onClick={(e) => {
-              setStyle();
-              selectAccessoriesButton(e);
-            }}
-          ></CategoryButton>
+    <>
+      
+      <div className={styles.wrap}>
+        <div className={styles.dilectus}>
+          <Background img={background[backgroundIndex].img}></Background>
+          <Fren img={fren[frenIndex].anim}></Fren>
+          {isReload && <Body img={body[bodyIndex].anim}></Body>}
+          {!isReload && <Body img={body[bodyIndex].anim}></Body>}
+          {isReload && <Eyes img={eyes[eyesIndex].anim} />}
+          {!isReload && <Eyes img={eyes[eyesIndex].anim} />}
         </div>
 
-        <div className={styles.accessory}>
-          {setStyle() &&
-            setStyle()?.map((item, index) =>
-              item.name === 'none' ? (
-                <div key={index} className={styles.empty}></div>
-              ) : (
-                <ItemButton
-                  type={
-                    (selectedAccessory === 'body' && item.id === bodyIndex) ||
-                    (selectedAccessory === 'background' &&
-                      item.id === backgroundIndex) ||
-                    (selectedAccessory === 'eyes' && item.id === eyesIndex) ||
-                    (selectedAccessory === 'fren' && item.id === frenIndex)
-                      ? 'selected'
-                      : 'default'
-                  }
-                  img={item.button}
-                  key={index}
-                  onClick={() => {
-                    selectStylesButton(item.name);
-                    reload();
-                  }}
-                />
-              )
-            )}
+        <div className={styles.edit}>
+          <div className={styles.style}>
+            <CategoryButton
+              img={bodyIcon}
+              id="body"
+              imgId="body"
+              type={selectedAccessory === 'body' ? 'selected' : 'default'}
+              onClick={(e) => {
+                setStyle();
+                selectAccessoriesButton(e);
+              }}
+            ></CategoryButton>
+
+            <CategoryButton
+              img={bgIcon}
+              id="background"
+              imgId="background"
+              type={selectedAccessory === 'background' ? 'selected' : 'default'}
+              onClick={(e) => {
+                setStyle();
+                selectAccessoriesButton(e);
+              }}
+            ></CategoryButton>
+
+            <CategoryButton
+              img={eyesIcon}
+              id="eyes"
+              imgId="eyes"
+              type={selectedAccessory === 'eyes' ? 'selected' : 'default'}
+              onClick={(e) => {
+                setStyle();
+                selectAccessoriesButton(e);
+              }}
+            ></CategoryButton>
+
+            <CategoryButton
+              img={frenIcon}
+              id="fren"
+              imgId="fren"
+              type={selectedAccessory === 'fren' ? 'selected' : 'default'}
+              onClick={(e) => {
+                setStyle();
+                selectAccessoriesButton(e);
+              }}
+            ></CategoryButton>
+          </div>
+
+          <div className={styles.accessory}>
+            {setStyle() &&
+              setStyle()?.map((item, index) =>
+                item.name === 'none' ? (
+                  <div key={index} className={styles.empty}></div>
+                ) : (
+                  <ItemButton
+                    type={
+                      (selectedAccessory === 'body' && item.id === bodyIndex) ||
+                      (selectedAccessory === 'background' &&
+                        item.id === backgroundIndex) ||
+                      (selectedAccessory === 'eyes' && item.id === eyesIndex) ||
+                      (selectedAccessory === 'fren' && item.id === frenIndex)
+                        ? 'selected'
+                        : 'default'
+                    }
+                    img={item.button}
+                    key={index}
+                    onClick={() => {
+                      selectStylesButton(item.name);
+                      reload();
+                    }}
+                  />
+                )
+              )}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
