@@ -9,6 +9,10 @@ import { body, background, eyes, fren } from './data/assets';
 import { useState } from 'react';
 import CategoryButton from './UIcomponents/CategoryButton';
 import ItemButton from './UIcomponents/ItemButton/ItemButton';
+import bodyIcon from './data/src/general/bodyIcon.svg';
+import eyesIcon from './data/src/general/eyesIcon.svg';
+import bgIcon from './data/src/general/bgIcon.svg';
+import frenIcon from './data/src/general/frenIcon.svg';
 
 const Dilectus = () => {
   const [isReload, setIsReload] = useState(true);
@@ -108,44 +112,44 @@ const Dilectus = () => {
       <div className={styles.edit}>
         <div className={styles.style}>
           <CategoryButton
+            img={bodyIcon}
             id="body"
+            imgId='body'
             onClick={(e) => {
               setStyle();
               selectAccessoriesButton(e);
             }}
-          >
-            BD
-          </CategoryButton>
+          ></CategoryButton>
 
           <CategoryButton
+            img={bgIcon}
             id="background"
+            imgId='background'
             onClick={(e) => {
               setStyle();
               selectAccessoriesButton(e);
             }}
-          >
-            BG
-          </CategoryButton>
+          ></CategoryButton>
 
           <CategoryButton
+            img={eyesIcon}
             id="eyes"
+            imgId='eyes'
             onClick={(e) => {
               setStyle();
               selectAccessoriesButton(e);
             }}
-          >
-            EY
-          </CategoryButton>
+          ></CategoryButton>
 
           <CategoryButton
+            img={frenIcon}
             id="fren"
+            imgId='fren'
             onClick={(e) => {
               setStyle();
               selectAccessoriesButton(e);
             }}
-          >
-            FR
-          </CategoryButton>
+          ></CategoryButton>
         </div>
 
         <div className={styles.accessory}>
