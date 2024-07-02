@@ -216,8 +216,12 @@ const Dilectus = () => {
                 )}
             </div>
           </div>
+        ) : isMode === 'feed' ? (
+          <div>feed</div>
+        ) : isMode === 'play' ? (
+          <div>play</div>
         ) : (
-          <div>smt</div>
+          <div>sleep</div>
         )}
       </div>
     </>
