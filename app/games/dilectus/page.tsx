@@ -13,6 +13,7 @@ import bodyIcon from './data/src/general/bodyIcon.svg';
 import eyesIcon from './data/src/general/eyesIcon.svg';
 import bgIcon from './data/src/general/bgIcon.svg';
 import frenIcon from './data/src/general/frenIcon.svg';
+import MainMenu from './components/MainMenu/MainMenu';
 
 const Dilectus = () => {
   const [isReload, setIsReload] = useState(true);
@@ -102,6 +103,15 @@ const Dilectus = () => {
 
   return (
     <>
+      <MainMenu onClickPlay={function (): void {
+        throw new Error('Function not implemented.');
+      } } onClickFeed={function (): void {
+        throw new Error('Function not implemented.');
+      } } onClickSleep={function (): void {
+        throw new Error('Function not implemented.');
+      } } onClickCreate={function (): void {
+        throw new Error('Function not implemented.');
+      } }/>
       <div className={styles.wrap}>
         <div className={styles.dilectus}>
           <Background img={background[backgroundIndex].img}></Background>
