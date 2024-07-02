@@ -6,6 +6,7 @@ interface Props {
   onClickFeed: () => void;
   onClickSleep: () => void;
   onClickCreate: () => void;
+  onClickStats: () => void;
 }
 
 const MainMenu = ({
@@ -13,9 +14,11 @@ const MainMenu = ({
   onClickFeed,
   onClickSleep,
   onClickCreate,
+  onClickStats,
 }: Props) => {
   return (
     <div className={styles.wrapper}>
+      <button onClick={onClickStats}>Stats</button>
       <button onClick={onClickPlay}>Play</button>
       <button onClick={onClickFeed}>Feed</button>
       <button onClick={onClickCreate}>Create</button>
