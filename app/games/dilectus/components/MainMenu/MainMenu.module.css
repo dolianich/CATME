@@ -5,6 +5,33 @@
     justify-content: center;
     align-items: center;
     margin-top: 18px;
+    gap: 12px;
+}
+
+.wrapper button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #1B1E23;
+    color: #F0F1FF;
+    padding: 12px;
+    border-radius: 100px;
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.wrapper button:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #1B1E23;
+    color: #F0F1FF;
+    padding: 12px;
+    border-radius: 100px;
+    cursor: pointer;
+    opacity: 100%;
 }
 
 @media (max-width: 600px) { 

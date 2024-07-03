@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './MainMenu.module.css';
+import { House, PuzzlePiece, Bone, Palette, Bed } from '@phosphor-icons/react';
 
 interface Props {
   onClickPlay: () => void;
@@ -18,11 +19,21 @@ const MainMenu = ({
 }: Props) => {
   return (
     <div className={styles.wrapper}>
-      <button onClick={onClickStats}>Stats</button>
-      <button onClick={onClickPlay}>Play</button>
-      <button onClick={onClickFeed}>Feed</button>
-      <button onClick={onClickCreate}>Create</button>
-      <button onClick={onClickSleep}>Sleep</button>
+      <button onClick={onClickStats}>
+        <House size={24} weight="fill" />
+      </button>
+      <button onClick={onClickPlay}>
+        <PuzzlePiece size={24} weight="fill" />
+      </button>
+      <button onClick={onClickFeed}>
+        <Bone size={24} weight="fill" />
+      </button>
+      <button onClick={onClickCreate}>
+        <Palette size={24} weight="fill" />
+      </button>
+      <button onClick={onClickSleep}>
+        <Bed size={24} weight="fill" />
+      </button>
     </div>
   );
 };
