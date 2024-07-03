@@ -16,7 +16,7 @@ import frenIcon from './data/src/general/frenIcon.svg';
 import MainMenu from './components/MainMenu/MainMenu';
 
 const Dilectus = () => {
-  const [isReload, setIsReload] = useState(true);
+  const [isReload, setIsReload] = useState(false);
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const [bodyIndex, setBodyIndex] = useState(0);
   const [eyesIndex, setEyesIndex] = useState(0);
@@ -40,6 +40,13 @@ const Dilectus = () => {
 
   const sleep = () => {
     setIsMode('sleep');
+    setEyesIndex(9);
+    setTimeout(() => {
+      setEyesIndex(0);
+      setIsMode('stats');
+      setIsReload(!!isReload);
+      console.log(isReload);
+    }, 3000);
   };
 
   const stats = () => {
@@ -108,6 +115,8 @@ const Dilectus = () => {
             return setEyesIndex(1);
           default:
             return setEyesIndex(0);
+          case 'sleep':
+            return setEyesIndex(9);
         }
       case 'fren':
         switch (name) {
@@ -130,7 +139,10 @@ const Dilectus = () => {
         onClickPlay={play}
         onClickCreate={create}
         onClickFeed={feed}
-        onClickSleep={sleep}
+        onClickSleep={() => {
+          reload();
+          sleep();
+        }}
       />
       {isMode === 'play' ? (
         <div> Game Component</div>
@@ -139,8 +151,8 @@ const Dilectus = () => {
           <div className={styles.dilectus}>
             <Background img={background[backgroundIndex].img}></Background>
             <Fren img={fren[frenIndex].anim}></Fren>
-            {isReload && <Body img={body[bodyIndex].anim}></Body>}
-            {!isReload && <Body img={body[bodyIndex].anim}></Body>}
+            {isReload && <Body img={body[bodyIndex].anim} />}
+            {!isReload && <Body img={body[bodyIndex].anim} />}
             {isReload && <Eyes img={eyes[eyesIndex].anim} />}
             {!isReload && <Eyes img={eyes[eyesIndex].anim} />}
           </div>
@@ -198,7 +210,9 @@ const Dilectus = () => {
               <div className={styles.accessory}>
                 {setStyle() &&
                   setStyle()?.map((item, index) =>
-                    item.name === 'none' ? (
+                    item.name === 'sleep' ? (
+                      <></>
+                    ) : item.name === 'none' ? (
                       <div key={index} className={styles.empty}></div>
                     ) : (
                       <ItemButton

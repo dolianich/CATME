@@ -25,11 +25,11 @@ const MainMenu = ({
       <button onClick={onClickPlay}>
         <PuzzlePiece size={24} weight="fill" />
       </button>
-      <button onClick={onClickFeed}>
-        <Bone size={24} weight="fill" />
-      </button>
       <button onClick={onClickCreate}>
         <Palette size={24} weight="fill" />
+      </button>
+      <button onClick={onClickFeed}>
+        <Bone size={24} weight="fill" />
       </button>
       <button onClick={onClickSleep}>
         <Bed size={24} weight="fill" />

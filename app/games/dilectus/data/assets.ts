@@ -22,6 +22,7 @@ import snailImg from './src/general/snailImg.svg';
 import shroomImg from './src/general/shroomImg.svg';
 import frogImg from './src/general/frogImg.svg';
 import frog from './src/frens/frog.json';
+import sleep from './src/eyes/sleep.json';
 
 export const body = [
     {id: 0 ,anim: blue, name: 'blue', button: blueBody},
@@ -56,7 +57,8 @@ export const eyes = [
     {id: 5, anim: 'none', name: 'none', button: grey},
     {id: 6, anim: 'none', name: 'none', button: grey},
     {id: 7, anim: 'none', name: 'none', button: grey},
-    {id: 8, anim: 'none', name: 'none', button: grey}
+    {id: 8, anim: 'none', name: 'none', button: grey},
+    {id: 9, anim: sleep, name: 'sleep'}
 ];
 
 export const fren = [
