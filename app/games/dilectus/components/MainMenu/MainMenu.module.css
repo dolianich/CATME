@@ -1,8 +1,14 @@
 .wrapper{
-    margin-left: -230px;
+    margin-left: -242px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    margin-top: 18px;
+}
+
+@media (max-width: 600px) { 
+    .wrapper{
+        margin-left: 0;
+    }
 }
