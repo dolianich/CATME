@@ -23,6 +23,7 @@ import shroomImg from './src/general/shroomImg.svg';
 import frogImg from './src/general/frogImg.svg';
 import frog from './src/frens/frog.json';
 import sleep from './src/eyes/sleep.json';
+import eat from './src/eyes/eat.json';
 
 export const body = [
     {id: 0 ,anim: blue, name: 'blue', button: blueBody},
@@ -58,7 +59,8 @@ export const eyes = [
     {id: 6, anim: 'none', name: 'none', button: grey},
     {id: 7, anim: 'none', name: 'none', button: grey},
     {id: 8, anim: 'none', name: 'none', button: grey},
-    {id: 9, anim: sleep, name: 'sleep'}
+    {id: 9, anim: sleep, name: 'sleep'},
+    {id: 10, anim: eat, name: 'eat'}
 ];
 
 export const fren = [

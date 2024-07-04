@@ -32,6 +32,12 @@ const Dilectus = () => {
 
   const feed = () => {
     setIsMode('feed');
+    setEyesIndex(10);
+    setTimeout(() => {
+      setEyesIndex(0);
+      setIsMode('stats');
+      setIsReload(!!isReload);
+    }, 999);
   };
 
   const create = () => {
@@ -45,7 +51,6 @@ const Dilectus = () => {
       setEyesIndex(0);
       setIsMode('stats');
       setIsReload(!!isReload);
-      console.log(isReload);
     }, 3000);
   };
 
@@ -117,6 +122,8 @@ const Dilectus = () => {
             return setEyesIndex(0);
           case 'sleep':
             return setEyesIndex(9);
+          case 'eat':
+            return setEyesIndex(10);
         }
       case 'fren':
         switch (name) {
@@ -138,7 +145,10 @@ const Dilectus = () => {
         onClickStats={stats}
         onClickPlay={play}
         onClickCreate={create}
-        onClickFeed={feed}
+        onClickFeed={() => {
+          reload();
+          feed();
+        }}
         onClickSleep={() => {
           reload();
           sleep();
@@ -210,7 +220,7 @@ const Dilectus = () => {
               <div className={styles.accessory}>
                 {setStyle() &&
                   setStyle()?.map((item, index) =>
-                    item.name === 'sleep' ? (
+                    item.name === 'sleep' || item.name === 'eat' ? (
                       <></>
                     ) : item.name === 'none' ? (
                       <div key={index} className={styles.empty}></div>
