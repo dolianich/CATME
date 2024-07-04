@@ -37,7 +37,7 @@ const Dilectus = () => {
       setEyesIndex(0);
       setIsMode('stats');
       setIsReload(!!isReload);
-    }, 999);
+    }, 1900);
   };
 
   const create = () => {
