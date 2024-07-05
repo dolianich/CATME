@@ -14,6 +14,7 @@ import eyesIcon from './data/src/general/eyesIcon.svg';
 import bgIcon from './data/src/general/bgIcon.svg';
 import frenIcon from './data/src/general/frenIcon.svg';
 import MainMenu from './components/MainMenu/MainMenu';
+import Info from './components/Info/Info';
 
 const Dilectus = () => {
   const [isReload, setIsReload] = useState(false);
@@ -250,7 +251,7 @@ const Dilectus = () => {
               </div>
             </div>
           ) : isMode === 'feed' || isMode === 'sleep' || isMode === 'stats' ? (
-            <div>Information</div>
+            <Info />
           ) : (
             <></>
           )}
