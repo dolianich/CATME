@@ -1,6 +1,6 @@
 import SpaceWalkCover from './SpaceWalk/src/SpaceWalkCover.png';
 import SpaceInvadersCover from './SpaceInvaders/src/SpaceInvadersCover.png';
-import DeathDungeonCover from './DeathDungeon/src/DeathDungeonCoverpng.png';
+import TheLostForestCover from './TheLostForest/src/TheLostForestCover.png';
 import PompaDroidCover from './PompaDroid/src/PompaDroidCover.png';
 import PackmanCover from './Packman/src/PackmanCover.png';
 import FroggerCover from './Frogger/src/FroggerCover.png';
@@ -8,6 +8,20 @@ import FlappyBirdCover from './FlappyBird/src/FlappyBirdCover.png';
 import SuperMarioCover from './SuperMarioBros/src/SuperMarioCover.png';
  
  export const gamesData = [
+  {
+    id: '3',
+    title: 'The Lost Forest',
+    category: 'arcade',
+    cover: TheLostForestCover,
+    price: 'free',
+    shortDescription: 'Reach the end of the game by collecting the carrots in the chests',
+    developer: '',
+    releaseDate: '',
+    fullDescription: '',
+    gameBuild: '',
+    status: '',
+    path: '/theLostForest'
+  },
   {
     id: '7',
     title: 'Pepe Bird',
@@ -106,19 +120,6 @@ import SuperMarioCover from './SuperMarioBros/src/SuperMarioCover.png';
       status: '',
       path: '/spaceInvaders'
     },
-    {
-      id: '3',
-      title: 'Death Dungeon',
-      category: 'arcade',
-      cover: DeathDungeonCover,
-      price: 'free',
-      shortDescription: 'The secret Dungeon',
-      developer: '',
-      releaseDate: '',
-      fullDescription: '',
-      gameBuild: '',
-      status: '',
-      path: '/deathDungeon'
-    },
+    
       
   ];
