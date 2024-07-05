@@ -18,10 +18,21 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    background-color: #0A0B0F;
+    border-radius: 100px;
 }
 
 .balance{
     flex: 1;
+}
+
+.balance p{
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 16px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1.50px;
+    color: #A7E9FF;
 }
 
 .balanceIcon{
@@ -29,10 +40,47 @@
     align-items: center;
     justify-content: center;
     background-color: #24282F;
-    color: #F0F1FF;
     border-radius: 100px;
     width: 68px;
     height: 68px;
+}
+
+.heartIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0A0B0F;
+    border-radius: 100px;
+    width: 68px;
+    height: 68px;
+    margin-right: -18px;
+}
+
+.health{
+    border-radius: 100px;
+    background-color: #FFA6BD;
+    height: 36px;
+    flex: 1;
+    margin-right: 18px;
+}
+
+.energy{
+    border-radius: 100px;
+    background-color: #C1A6FF;
+    height: 36px;
+    flex: 1;
+    margin-right: 18px;
+}
+
+.energyIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0A0B0F;
+    border-radius: 100px;
+    width: 68px;
+    height: 68px;
+    margin-right: -18px;
 }
 
 .token{
@@ -52,11 +100,21 @@
     cursor: pointer;
 }
 
+.questButton p{
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 16px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1.50px;
+    color: #F0F1FF;
+}
+
 
 @media (max-width: 870px) { 
     .wrap{
         flex-direction: column;
         width: 314px;
         height: 404px;
+        gap: 18px;
     }
 }
