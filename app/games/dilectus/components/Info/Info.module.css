@@ -1,0 +1,52 @@
+.wrap{
+    display: flex;
+    flex-direction: column;
+    border-radius: 48px;
+    background-color: #1B1E23;
+    padding: 18px;
+    gap: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 404px;
+    height: 314px;
+}
+
+.slot{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.balance{
+    flex: 1;
+}
+
+.balanceIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #24282F;
+    color: #F0F1FF;
+    border-radius: 100px;
+    width: 68px;
+    height: 68px;
+}
+
+.token{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+@media (max-width: 870px) { 
+    .wrap{
+        flex-direction: column;
+        width: 314px;
+        height: 404px;
+    }
+}
