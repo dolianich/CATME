@@ -14,7 +14,7 @@ import SuperMarioCover from './SuperMarioBros/src/SuperMarioCover.png';
     category: 'arcade',
     cover: TheLostForestCover,
     price: 'free',
-    shortDescription: 'Reach the end of the game by collecting the carrots in the chests',
+    shortDescription: 'Collect the carrots in the chests',
     developer: '',
     releaseDate: '',
     fullDescription: '',
