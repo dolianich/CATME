@@ -15,6 +15,7 @@ import bgIcon from './data/src/general/bgIcon.svg';
 import frenIcon from './data/src/general/frenIcon.svg';
 import MainMenu from './components/MainMenu/MainMenu';
 import Info from './components/Info/Info';
+import GameComponent from './components/GameComponent/GameComponent';
 
 const Dilectus = () => {
   const [isReload, setIsReload] = useState(false);
@@ -156,7 +157,7 @@ const Dilectus = () => {
         }}
       />
       {isMode === 'play' ? (
-        <div> Game Component</div>
+        <GameComponent />
       ) : (
         <div className={styles.wrap}>
           <div className={styles.dilectus}>

@@ -1,0 +1,15 @@
+.container{
+    margin-top: 18px;
+    margin-left: -242px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameWindow{
+    background-color: #1B1E23;
+    padding: 18px;
+    border-radius: 48px;
+    width: 772px;
+    height: 314px;
+}
