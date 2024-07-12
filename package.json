@@ -10,20 +10,22 @@
   },
   "dependencies": {
     "@biconomy/account": "^4.4.6",
-    "@walletconnect/sign-client": "^2.13.3",
-    "@web3auth/modal": "^8.6.2",
-    "ethers": "^5.7.2",
     "@lottiefiles/react-lottie-player": "^3.5.4",
     "@phosphor-icons/react": "^2.1.5",
+    "@prisma/client": "^5.16.2",
+    "@walletconnect/sign-client": "^2.13.3",
+    "@web3auth/base": "^8.6.2",
+    "@web3auth/ethereum-provider": "^8.6.2",
+    "@web3auth/modal": "^8.6.2",
+    "ethers": "^5.7.2",
     "next": "14.2.3",
     "phosphor-react": "^1.4.1",
+    "prisma": "^5.3.1",
     "react": "^18",
     "react-dom": "^18",
     "react-unity-webgl": "^9.5.2",
     "styled-components": "^6.1.11",
-    "web3": "^4.1.1",
-    "@web3auth/base": "^8.6.2",
-    "@web3auth/ethereum-provider": "^8.6.2"
+    "web3": "^4.1.1"
   },
   "devDependencies": {
     "@types/node": "^20",
