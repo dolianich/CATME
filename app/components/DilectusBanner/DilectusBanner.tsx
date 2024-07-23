@@ -15,7 +15,10 @@ const DilectusBanner = () => {
       <div className={styles.content}>
         <div className={styles.cta}>
           <h1>DILECTUS</h1>
-          <p>Your On-Chain Fren</p>
+          <p>
+            Your On-Chain Fren <br /> Feed, play, customize and level up your
+            Dilectus <br /> to earn tokens ant other cool rewards
+          </p>
           <Button
             variant="secondary"
             title={'try demo'}
